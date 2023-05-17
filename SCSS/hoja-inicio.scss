@@ -1,0 +1,115 @@
+h5 {
+  color: rgb(19, 18, 18);
+  font-weight: 700;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.carro {
+  color: black;
+  font-size: 15px;
+
+}
+
+/*******************todo aca es del footer********************************/
+footer {
+  background-color: #f6e2f3db;
+  padding: 30px 0;
+  margin: 15px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-md-6,
+.col-md-3 {
+  padding: 0 15px;
+}
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #222020;
+  text-shadow: 2px 2px 4px #64646499;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/*****aca diseño de los botones sociales**********/
+.buttons {
+  border-radius: 50%;
+  color: #d8cece;
+  font-size: 24px;
+  transition: transform 0.3s;
+}
+
+.buttons:hover {
+  transform: scale(1.2);
+}
+
+.bi-instagram{
+  background-color: #c32aa3;
+  color: #fff;
+}
+
+.bi-whatsapp{
+  background-color: #25d366;
+  color: #fff;
+}
+
+.bi-facebook{
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.bi-telephone{
+  background-color: #8249ad;
+  color: #fff;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.bottom-bar {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+hr {
+  color: rgb(140, 12, 12);
+}
+
+p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.h55 {
+  text-align: center;
+  margin: 15px;
+  font-size: 25px;
+  color: #333;
+}

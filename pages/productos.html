@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="icon" href="../img/logo_tami-removebg-preview.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body class="container-fluid">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="../img/logo_tami-removebg-preview.png" alt="Bootstrap" width="60" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="pages/productos.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./productos.html">Producto</a></li>
+                            <li><a class="dropdown-item" href="./productos.html">Producto</a></li>
+                            <li><a class="dropdown-item" href="./productos.html">producto</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./blog.html">Blog</a>
+                    </li>
+                </ul>
+                <form class="d-flex" id="searchForm">
+                    <input class="form-control me-2" type="text" id="searchInput" placeholder="Buscar articulo">
+                    <button class="btn btn-border border border border-danger-subtle" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Productos</h1>
+        <!--------------aca comienza el carrito------------------------------>
+        <div class="container-icon">
+            <div class="container-cart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="none" class="bi bi-cart3 icon-cart"
+                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+                <div class="count-products">
+                    <span id="contador-productos">0
+                    </span>
+                </div>
+            </div>
+
+            <div class="container-cart-productos  hidden-cart">
+                <div class="row-product">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">base linda</p>
+                            <span class="precio-producto-carrito">$80</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-x icon-close" viewBox="0 0 16 16">
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </div>
+                </div>
+                
+
+                <!----div del total-->
+                <div class="cart-total">
+                    <h3>Total:</h3>
+                    <span class="total-a-pagar">$200</span>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!--------------COMIENZO DE TODOS LOS PRODUCTOS DE LA TIENDA--------------------->
+    <div class="container-item">
+        <div class="item">
+            <figure>
+                <img src="../img/base.jpg" alt="base">
+            </figure>
+            <div class="info-producto">
+                <h2>Base calidad</h2>
+                <p class="precio">$80</p>
+                <button type="button" class="btn btn-dark">Añadir a carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../img/base1.jpg" alt="base1">
+            </figure>
+            <div class="info-producto">
+                <h2>Base1 calidad</h2>
+                <p class="precio">$580</p>
+                <button type="button" class="btn btn-dark">Añadir a carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../img/brocha.jpg" alt="brocha">
+            </figure>
+            <div class="info-producto">
+                <h2>Brocha linda</h2>
+                <p class="precio">$660</p>
+                <button type="button" class="btn btn-dark">Añadir a carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../img/corrector.jpg" alt="Corrector">
+            </figure>
+            <div class="info-producto">
+                <h2>Corrector linda</h2>
+                <p class="precio">$800</p>
+                <button type="button" class="btn btn-dark">Añadir a carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../img/labio.jpg" alt="labio">
+            </figure>
+            <div class="info-producto">
+                <h2>Base calidad</h2>
+                <p class="precio">$980</p>
+                <button type="button" class="btn btn-dark">Añadir a carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../img/ojos.jpg" alt="ojos">
+            </figure>
+            <div class="info-producto">
+                <h2>ojos linda</h2>
+                <p class="precio">$880</p>
+                <button type="button" class="btn btn-dark">Añadir a carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../img/ojos1.jpg" alt="ojos1">
+            </figure>
+            <div class="info-producto">
+                <h2>ojos linda</h2>
+                <p class="precio">$880</p>
+                <button type="button" class="btn btn-dark">Añadir a carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../img/pinza.jpg" alt="pinza">
+            </figure>
+            <div class="info-producto">
+                <h2>pinza</h2>
+                <p class="precio">$890</p>
+                <button type="button" class="btn btn-dark">Añadir a carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../img/pinza.jpg" alt="base">
+            </figure>
+            <div class="info-producto">
+                <h2>Pinza</h2>
+                <p class="precio">$80</p>
+                <button type="button" class="btn btn-dark">Añadir a carrito</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="../main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
