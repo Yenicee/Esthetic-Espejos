@@ -13,82 +13,75 @@
 </head>
 
 <body class="container-fluid">
-    <!------------ESTE ES EL MENU------------------>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand">
-                <img src="../img/logo_tami-removebg-preview.png" alt="Bootstrap" width="60" height="60">
-              </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="pages/productos.html" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Productos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./productos.html">Producto</a></li>
-                            <li><a class="dropdown-item" href="./productos.html">Producto</a></li>
-                            <li><a class="dropdown-item" href="./productos.html">producto</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./blog.html">Blog</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-border border border border-danger-subtle" type="submit">Buscar</button>
-                </form>
-            </div>
-        </div>
-    </nav>
+       <!------------DA COMIENZO A LA BARRA DE NAVEGACION-------------------------->
+ <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand">
+      <img src="../img/logo_tami-removebg-preview.png" alt="miLogo" width="80" height="80">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-collapse mb-2 mb-lg-0 blanco ">
+       <li><a class="nav-link active" href="../index.html">Inicio</a></li> 
+        <li><a class="nav-link active" href="./depilacionDefinitiva.html">Depilacion Definitiva</a>
+          <!-------3 subpaginas de facial---------->
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">Tratamientos Faciales</a>
+          <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./criofrecuencia.html">Criofrecuencia</a></li>
+              <li><a class="dropdown-item" href="./peeling.html">Peeling</a></li>
+              <li><a class="dropdown-item" href="./limpiezaProfunda.html">Limpieza Profunda</a></li>
+            </ul>
+      </li>
+      <!-----------------------------separar----------------------------->
+        <!------------5 subpaginas para tratamiento corporal------------------------>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+           Tratamiento corporal
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./criolipolisisPlana.html">Criolipolisis Plana</a></li>
+            <li><a class="dropdown-item" href="./lipolaser.html">Lipolaser</a></li>
+            <li><a class="dropdown-item" href="./criofrecuencia.html">Criofrecuencia</a></li>
+            <li><a class="dropdown-item" href="./electrovacum.html">Electrovacum</a></li>
+            <li><a class="dropdown-item" href="./electroporacion.html">Electroporacion</a></li>
+            <li><a class="dropdown-item" href="./ondasRusas.html">Ondas Rusas</a></li>
+          </ul>
+        </li>
+        <!-------------------------separador-------------------------------------->
+        <li><a class="nav-link active" href="./cursos.html">Cursos</a></li>
+        <li><a class="nav-link active" href="./equipo.html">Alquileres de equipos y servicios</a></li>
+        <li> <a class="nav-link active" href="./productos.html">Productos</a></li>
+        <li> <a class="nav-link active" href="./blog.html">Blog</a></li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-----------------------------------TERMINA LA BARRA DE INICIO CON LOS LINK----------------------------------->
 
     <!-----------------aca va contenido de la pagina equipo y servicio--------------------->
 
-    <div class="card mb-3 shadow">
-        <img src="../img/equipo junin.png" class="card-img-top" alt="equipo">
-        <div class="card-body">
-            <h5 class="card-img-overlay planta">Alquiler de equipos y servicios</h5>
-            <p>Durante la depilación láser, un láser emite una luz que es absorbida por el pigmento
-                (melanina) del vello.</p>
-            <p> La energía lumínica se convierte en calor, que daña los sacos en forma de tubo dentro de la piel
-                (folículos
-                pilosos) que producen vellos. </p>
-            <p> Este daño inhibe o retrasa el crecimiento futuro del vello.</p>
-        </div>
-    </div>
-    <a href="https://app3.doyturnos.com/estheticespejos/" class="btn btn-dark">Sacar tu turno</a>
-
   
     <!-----------------------------------Aca va a ir los enlaces para las subpaginas------------------------------------------->
-    <ul class="enlace">
-        <p class="enlace1"><a href="../pages/depilacion.html"
-                class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Depilacion</a>
-        </p>
-        <p class="enlace1"><a href="../pages/cursos.html"
-                class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Cursos</a>
-        </p>
-        <p class="enlace1"><a href="../pages/tratamiento.html"
-                class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Tratamiento</a>
-        </p>
-        <p class="enlace1"><a href="../pages/equipo.html"
-                class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Equipo</a>
-        </p>
-    </ul>
-    </div>
-
-
-
-
+  <ul class="nav justify-content-center">
+    <li class="item">
+      <a class="nav-link enlace" href="./tratamientoFacial.html">Tratamientos Faciales</a>
+    </li>
+    <li class="item">
+      <a class="nav-link  enlace" href="./limpiezaProfunda.html">Limpieza Profunda</a>
+    </li>
+    <li class="item">
+      <a class="nav-link enlace" href="./equipo.html">Equipos que usamos</a>
+    </li>
+    <li class="item">
+      <a class="nav-link  enlace" href="./crema.html">Ultimas cremas</a>
+    </li>
+  </ul>
 
 
 

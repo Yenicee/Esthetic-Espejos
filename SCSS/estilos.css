@@ -1,16 +1,98 @@
+@charset "UTF-8";
 h5 {
   color: rgb(19, 18, 18);
   font-weight: 700;
   font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.carro {
-  color: black;
-  font-size: 15px;
+/*****************************CREAR ESTILO Y COLOR A MI BARRA DE NAVEGACION**********************************************/
+nav {
+  background-color: rgba(174, 114, 209, 0.3137254902);
+}
+nav .blanco {
+  color: rgb(29, 2, 50);
+}
+nav .blanco li {
+  padding: 10px;
+}
+nav .blanco a {
+  text-decoration: none;
+  position: relative;
+  font-family: "Times New Roman", Times, serif;
+}
+nav .blanco a:after {
+  content: "";
+  position: absolute;
+  background: #6d2abb;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+nav .blanco a:hover:after {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
+/*************************ESTILO DE BOTONES DE TRES TARJETAS DE INICIO*********************************************/
+.cta {
+  border: none;
+  background: none;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: rgb(47, 13, 95);
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #533688;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/************************************Aca termina el estilo *************************************************/
+/*******************todo aca es del footer********************************/
 footer {
-  background-color: #dfd9d9;
+  background-color: rgba(174, 114, 209, 0.6823529412);
   padding: 30px 0;
   margin: 15px 0;
 }
@@ -26,6 +108,7 @@ footer {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  color: rgb(39, 8, 68);
 }
 
 .col-md-6,
@@ -33,11 +116,30 @@ footer {
   padding: 0 15px;
 }
 
+/*dar estilo al h4*/
 h4 {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 15px;
+  color: #222020;
+  text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.6);
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  background: linear-gradient(rgb(211, 72, 72), rgb(54, 15, 15));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  animation: text 5s linear infinite;
 }
 
+@keyframes text {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
 ul {
   list-style: none;
   padding: 0;
@@ -48,22 +150,131 @@ li {
   margin-bottom: 10px;
 }
 
+/*****aca diseño de los botones sociales**********/
+.buttons {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px rgba(98, 94, 94, 0.1607843137);
+  transition: 0.3s;
+}
+
+.buttons:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 6px 3px rgba(200, 40, 40, 0.8941176471);
+}
+
+.buttons svg {
+  transition: 0.3s;
+  height: 20px;
+}
+
 a {
-  color: #333;
+  color: #1d042c;
   text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .bottom-bar {
-  background-color: #333;
-  color: #fff;
+  background-color: #8b8383;
+  color: #3b3a3a;
   padding: 15px 0;
   text-align: center;
 }
 
-.circulo {
-  color: aqua;
+hr {
+  color: rgb(140, 12, 12);
 }
 
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.h55 {
+  text-align: center;
+  margin: 15px;
+  font-size: 35px;
+  color: #15051a;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*animacion de tarjetas de la parte de inicio*/
+.coli {
+  box-sizing: border-box;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.coli:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+/*ACA GENERO ESTILO A LOS BOTONES DE LLEVARNOS AL LINK*/
+.btn {
+  background-color: #44124b;
+  /* Green */
+  border: none;
+  color: rgb(104, 100, 107);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  /* border-radius: 10px; */
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(134, 90, 196, 0.768);
+  transform: skewX(-30deg);
+  transition: all 1s ease-in-out;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(86, 34, 106, 0.746);
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover::after {
+  width: 100%;
+}
+
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #582c61;
+}
+
+/*termina aca el estilo de los buttons*/
 .planta {
   color: rgb(22, 21, 21);
   text-align: center;
@@ -71,16 +282,33 @@ a {
   font-size: 35px;
 }
 
+/*CREAR ESTILO AL LINK DE LAS SUBPAGINAS*/
 .enlace {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-}
-.enlace .enlace1 {
-  margin: 5px;
+  color: #af85c6;
 }
 
+/*ACA VOY A GENERAR LOS ESTILOS PARA TODAS LAS SUBPAGINAS LA PARTE DE CARD*/
+.pag-imagen {
+  background: url(/img/img-prueba.png) no-repeat center;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+.pag-imagen .pag-texto {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+p::first-letter {
+  color: rgb(55, 14, 93);
+  font-size: xx-large;
+}
+
+/*GENERAR MAYUSCULA A TARJETA DE TRATAMIENTO FACIAL*/
 *::after,
 *::before,
 * {
@@ -204,12 +432,13 @@ header {
 /*ACA EMPIEZA LOS ITEM DE LA TIENDA*/
 .container-item {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid: 20px;
 }
 
 .item {
   border-radius: 10px;
+  margin: 10px 0;
 }
 
 .item:hover {
