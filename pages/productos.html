@@ -67,45 +67,61 @@
     </nav>
 
     <!-----------------------------------TERMINA LA BARRA DE INICIO CON LOS LINK----------------------------------->
-
+    <h1>Linea Profesional</h1>
+    <br><hr>
     <header>
-        <h1>Productos</h1>
         <!--------------aca comienza el carrito------------------------------>
         <div class="container-icon">
             <div class="container-cart-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="none" class="bi bi-cart3 icon-cart"
-                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="icon-cart"
+                >
                     <path
-                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                    />
                 </svg>
                 <div class="count-products">
-                    <span id="contador-productos">0
-                    </span>
+                    <span id="contador-productos">0</span>
                 </div>
             </div>
 
-            <div class="container-cart-productos  hidden-cart">
-                <div class="row-product">
+            <div class="container-cart-products hidden-cart">
+                <div class="row-product hidden">
                     <div class="cart-product">
                         <div class="info-cart-product">
                             <span class="cantidad-producto-carrito">1</span>
-                            <p class="titulo-producto-carrito">base linda</p>
+                            <p class="titulo-producto-carrito">base</p>
                             <span class="precio-producto-carrito">$80</span>
                         </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-x icon-close" viewBox="0 0 16 16">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="icon-close"
+                        >
                             <path
-                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6 18L18 6M6 6l12 12"
+                            />
                         </svg>
                     </div>
                 </div>
 
-
-                <!----div del total-->
-                <div class="cart-total">
+                <div class="cart-total hidden">
                     <h3>Total:</h3>
-                    <span class="total-a-pagar">$200</span>
+                    <span class="total-pagar">$200</span>
                 </div>
+                <p class="cart-empty">El carrito está vacío</p>
             </div>
         </div>
 
@@ -114,102 +130,143 @@
     <div class="container-item">
         <div class="item">
             <figure>
-                <img src="../img/base.jpg" alt="base">
+                <img src="../img/base.jpg" alt="producto">
             </figure>
-            <div class="info-producto">
+            <div class="info-product">
                 <h2>Base calidad</h2>
-                <p class="precio">$80</p>
-                <button type="button" class="btn btn">Añadir a carrito</button>
+                <p class="price">$80</p>
+                <button class="btn btn btn-add-cart">Añadir al carrito</button>
+
             </div>
         </div>
         <div class="item">
             <figure>
-                <img src="../img/base1.jpg" alt="base1">
+                <img src="../img/base1.jpg" alt="producto">
             </figure>
-            <div class="info-producto">
+            <div class="info-product">
                 <h2>Base1 calidad</h2>
-                <p class="precio">$580</p>
-                <button type="button" class="btn btn">Añadir a carrito</button>
+                <p class="price">$580</p>
+                <button class="btn btn btn-add-cart">Añadir al carrito</button>
             </div>
         </div>
         <div class="item">
             <figure>
                 <img src="../img/brocha.jpg" alt="brocha">
             </figure>
-            <div class="info-producto">
+            <div class="info-product">
                 <h2>Brocha linda</h2>
-                <p class="precio">$660</p>
-                <button type="button" class="btn btn">Añadir a carrito</button>
+                <p class="price">$660</p>
+                <button class="btn btn btn-add-cart">Añadir al carrito</button>
             </div>
         </div>
         <div class="item">
             <figure>
                 <img src="../img/corrector.jpg" alt="Corrector">
             </figure>
-            <div class="info-producto">
+            <div class="info-product">
                 <h2>Corrector linda</h2>
-                <p class="precio">$800</p>
-                <button type="button" class="btn btn">Añadir a carrito</button>
+                <p class="price">$800</p>
+                <button class="btn btn btn-add-cart">Añadir al carrito</button>
+
             </div>
         </div>
         <div class="item">
             <figure>
                 <img src="../img/labio.jpg" alt="labio">
             </figure>
-            <div class="info-producto">
+            <div class="info-product">
                 <h2>Base calidad</h2>
-                <p class="precio">$980</p>
-                <button type="button" class="btn btn">Añadir a carrito</button>
+                <p class="price">$980</p>
+                <button class="btn btn btn-add-cart">Añadir al carrito</button>
+
             </div>
         </div>
         <div class="item">
             <figure>
                 <img src="../img/ojos.jpg" alt="ojos">
             </figure>
-            <div class="info-producto">
+            <div class="info-product">
                 <h2>ojos linda</h2>
-                <p class="precio">$880</p>
-                <button type="button" class="btn btn">Añadir a carrito</button>
+                <p class="price">$880</p>
+                <button class="btn btn btn-add-cart">Añadir al carrito</button>
+
             </div>
         </div>
         <div class="item">
             <figure>
                 <img src="../img/ojos1.jpg" alt="ojos1">
             </figure>
-            <div class="info-producto">
+            <div class="info-product">
                 <h2>ojos linda</h2>
-                <p class="precio">$880</p>
-                <button type="button" class="btn btn">Añadir a carrito</button>
+                <p class="price">$880</p>
+                <button class="btn btn btn-add-cart">Añadir al carrito</button>
+
             </div>
         </div>
         <div class="item">
             <figure>
                 <img src="../img/pinza.jpg" alt="pinza">
             </figure>
-            <div class="info-producto">
+            <div class="info-product">
                 <h2>pinza</h2>
-                <p class="precio">$890</p>
-                <button type="button" class="btn btn">Añadir a carrito</button>
+                <p class="price">$890</p>
+                <button class="btn btn btn-add-cart">Añadir al carrito</button>
+
             </div>
         </div>
         <div class="item">
             <figure>
                 <img src="../img/pinza.jpg" alt="base">
             </figure>
-            <div class="info-producto">
+            <div class="info-product">
                 <h2>Pinza</h2>
-                <p class="precio">$80</p>
-                <button type="button" class="btn btn">Añadir a carrito</button>
+                <p class="price">$80</p>
+                <button class="btn btn btn-add-cart">Añadir al carrito</button>
+
             </div>
         </div>
     </div>
 
+<!-----------------link para ir a los otros productos--------------------------------->
 
+
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link enlace" href="../index.html">Inicio</a>
+      </li>
+    <li class="nav-item">
+      <a class="nav-link enlace" href="./maquillaje.html">Mazz Makeup</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link  enlace" href="./crema.html">Rouse Arey</a>
+    </li>
+  </ul>
+  
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
     <script src="../main.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+        <script>
+            Swal.fire({
+              title: 'Nuestras mejores lineas de cosmeticos',
+              text: 'Vas a encontrar todo para todo tipo de piel',
+              timer: 6000,
+              background: 'rgb(57, 52, 52)',
+              color: 'white',
+              position: 'center',
+              
+            });
+          </script>
 </body>
 
 </html>

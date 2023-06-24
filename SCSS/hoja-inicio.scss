@@ -7,24 +7,24 @@ h5 {
 
 
 /*****************************CREAR ESTILO Y COLOR A MI BARRA DE NAVEGACION**********************************************/
-nav{
+nav {
   background-color: #ae72d150;
 
-  .blanco{
+  .blanco {
     color: rgb(29, 2, 50);
   }
 
-  .blanco li{
+  .blanco li {
     padding: 10px;
   }
 
-  .blanco a{
-  text-decoration: none;
-  position: relative;
-  font-family: 'Times New Roman', Times, serif;
+  .blanco a {
+    text-decoration: none;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
   }
 
-  .blanco a:after{
+  .blanco a:after {
     content: "";
     position: absolute;
     background: #6d2abb;
@@ -37,7 +37,7 @@ nav{
     transition: transform 0.2s ease-in-out;
   }
 
-  .blanco a:hover:after{
+  .blanco a:hover:after {
     transform-origin: left;
     transform: scaleX(1);
   }
@@ -62,7 +62,7 @@ nav{
 .cta svg {
   transform: translateX(-8px);
   transition: all 0.3s ease;
-  
+
 }
 
 .cta:hover svg {
@@ -96,13 +96,15 @@ nav{
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
 /************************************Aca termina el estilo *************************************************/
 
 /*******************todo aca es del footer********************************/
 footer {
-  background-color: #ae72d1ae;
+  background-color: #40254753;
   padding: 30px 0;
   margin: 15px 0;
+  border-radius: 2% 5% 2% 5%;
 }
 
 .container {
@@ -123,6 +125,7 @@ footer {
 .col-md-3 {
   padding: 0 15px;
 }
+
 /*dar estilo al h4*/
 h4 {
   font-size: 20px;
@@ -131,21 +134,22 @@ h4 {
   text-shadow: 2px 2px 4px #64646499;
   font-family: 'Times New Roman', Times, serif;
   cursor: pointer;
- background: linear-gradient(rgb(211, 72, 72),rgb(54, 15, 15));
- color: transparent;
- background-clip: text;
- -webkit-background-clip: text;
- -moz-background-clip: text;
- animation: text 5s linear infinite;
+  background: linear-gradient(rgb(211, 72, 72), rgb(54, 15, 15));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  animation: text 5s linear infinite;
 }
 
-@keyframes text{
+@keyframes text {
   0% {
     filter: hue-rotate(0deg);
   }
- 100%{
-  filter: hue-rotate(360deg);
- }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 
@@ -160,25 +164,54 @@ li {
 }
 
 /*****aca diseño de los botones sociales**********/
-.buttons {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  margin: 0 10px;
-  background-color: #fff;
-  box-shadow: 0px 0px 4px #625e5e29;
-  transition: 0.3s;
+
+.bi-instagram {
+  color: #7e1b44;
+  margin: 2px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  border: #004dff;
+  transition: 0.5s;
+  border-radius: 50px;
+  box-shadow: 2px 2px 3px #999
 }
 
-.buttons:hover {
-  background-color: #f2f2f2;
-  box-shadow: 0px 0px 6px 3px #c82828e4;
+.bi-instagram:hover {
+  transform: scale(1.2);
 }
 
-.buttons svg {
-  transition: 0.3s;
-  height: 20px;
+.bi-whatsapp {
+  color: #0e6823;
+  margin: 5px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  border: #004dff;
+  transition: 0.5s;
+  border-radius: 50px;
+  box-shadow: 2px 2px 3px #999
 }
+
+.bi-whatsapp:hover {
+  transform: scale(1.2);
+}
+
+.bi-facebook {
+  color: rgb(29, 29, 185);
+  margin: 5px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  border: #004dff;
+  transition: 0.5s;
+  border-radius: 50px;
+  box-shadow: 2px 2px 3px #999
+}
+
+.bi-facebook:hover {
+  transform: scale(1.2);
+
+}
+/************ACA TERMINA LOS BOTONES SOCIALES************************/
+/**********************************************************/
 
 a {
   color: #1d042c;
@@ -194,7 +227,7 @@ a {
 }
 
 hr {
-  color: rgb(140, 12, 12);
+  color: rgb(97, 27, 134);
 }
 
 p {
@@ -210,37 +243,38 @@ p {
   color: #2d0439;
   font-family: 'Times New Roman', Times, serif;
 }
+
 /*animacion de tarjetas de la parte de inicio*/
 .coli {
   box-sizing: border-box;
   border-radius: 10px;
-cursor: pointer;
+  cursor: pointer;
   transition: all 0.5s;
   display: flex;
   user-select: none;
 }
 
-.coli:hover{
+.coli:hover {
   border: 1px solid black;
   transform: scale(1.05);
 }
 
 /*ACA GENERO ESTILO A LOS BOTONES DE LLEVARNOS AL LINK*/
-.btn{
+.btn {
   background-color: #44124b;
   /* Green */
-   border: none;
-   color: rgb(104, 100, 107);
+  border: none;
+  color: rgb(104, 100, 107);
 
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 15px;
-  
-   cursor: pointer;
-   position: relative;
-   overflow: hidden;
-   /* border-radius: 10px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  /* border-radius: 10px; */
 }
 
 .btn::before {
@@ -283,6 +317,5 @@ cursor: pointer;
   color: #ffffff;
   background-color: #582c61;
 }
+
 /*termina aca el estilo de los buttons*/
-
-

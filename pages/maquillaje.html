@@ -62,117 +62,181 @@
 <!-----------------------------------TERMINA LA BARRA DE INICIO CON LOS LINK----------------------->
 
 <h1>Mazz Makeup</h1>
+<br><hr>
 <!----------------------------items de los maquillajes----------------------------------------------------->
-
-<div class="container-item">
+<!--------------aca comienza el carrito------------------------------>
+<div class="container-icon">
+    <div class="container-cart-icon">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-cart"
+        >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+            />
+        </svg>
+        <div class="count-products">
+            <span id="contador-productos">0</span>
+        </div>
+    </div>
+  
+    <div class="container-cart-products hidden-cart">
+        <div class="row-product hidden">
+            <div class="cart-product">
+                <div class="info-cart-product">
+                    <span class="cantidad-producto-carrito">1</span>
+                    <p class="titulo-producto-carrito">base</p>
+                    <span class="precio-producto-carrito">$80</span>
+                </div>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="icon-close"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 18L18 6M6 6l12 12"
+                    />
+                </svg>
+            </div>
+        </div>
+  
+        <div class="cart-total hidden">
+            <h3>Total:</h3>
+            <span class="total-pagar">$200</span>
+        </div>
+        <p class="cart-empty">El carrito está vacío</p>
+    </div>
+  </div>
+  
+  </header>
+  <!--------------COMIENZO DE TODOS LOS PRODUCTOS DE LA TIENDA--------------------->
+  <div class="container-item">
   <div class="item">
-      <figure>
-          <img src="../img/base.jpg" alt="base">
-      </figure>
-      <div class="info-producto">
-          <h2>Base calidad</h2>
-          <p class="precio">$80</p>
-          <button type="button" class="btn btn">Añadir a carrito</button>
-      </div>
+    <figure>
+        <img src="../img/base.jpg" alt="producto">
+    </figure>
+    <div class="info-product">
+        <h2>Base calidad</h2>
+        <p class="price">$80</p>
+        <button class="btn btn btn-add-cart">Añadir al carrito</button>
+  
+    </div>
   </div>
   <div class="item">
-      <figure>
-          <img src="../img/base1.jpg" alt="base1">
-      </figure>
-      <div class="info-producto">
-          <h2>Base1 calidad</h2>
-          <p class="precio">$580</p>
-          <button type="button" class="btn btn">Añadir a carrito</button>
-      </div>
+    <figure>
+        <img src="../img/base1.jpg" alt="producto">
+    </figure>
+    <div class="info-product">
+        <h2>Base1 calidad</h2>
+        <p class="price">$580</p>
+        <button class="btn btn btn-add-cart">Añadir al carrito</button>
+    </div>
   </div>
   <div class="item">
-      <figure>
-          <img src="../img/brocha.jpg" alt="brocha">
-      </figure>
-      <div class="info-producto">
-          <h2>Brocha linda</h2>
-          <p class="precio">$660</p>
-          <button type="button" class="btn btn">Añadir a carrito</button>
-      </div>
+    <figure>
+        <img src="../img/brocha.jpg" alt="brocha">
+    </figure>
+    <div class="info-product">
+        <h2>Brocha linda</h2>
+        <p class="price">$660</p>
+        <button class="btn btn btn-add-cart">Añadir al carrito</button>
+    </div>
   </div>
   <div class="item">
-      <figure>
-          <img src="../img/corrector.jpg" alt="Corrector">
-      </figure>
-      <div class="info-producto">
-          <h2>Corrector linda</h2>
-          <p class="precio">$800</p>
-          <button type="button" class="btn btn">Añadir a carrito</button>
-      </div>
+    <figure>
+        <img src="../img/corrector.jpg" alt="Corrector">
+    </figure>
+    <div class="info-product">
+        <h2>Corrector linda</h2>
+        <p class="price">$800</p>
+        <button class="btn btn btn-add-cart">Añadir al carrito</button>
+  
+    </div>
   </div>
   <div class="item">
-      <figure>
-          <img src="../img/labio.jpg" alt="labio">
-      </figure>
-      <div class="info-producto">
-          <h2>Base calidad</h2>
-          <p class="precio">$980</p>
-          <button type="button" class="btn btn">Añadir a carrito</button>
-      </div>
+    <figure>
+        <img src="../img/labio.jpg" alt="labio">
+    </figure>
+    <div class="info-product">
+        <h2>Base calidad</h2>
+        <p class="price">$980</p>
+        <button class="btn btn btn-add-cart">Añadir al carrito</button>
+  
+    </div>
   </div>
   <div class="item">
-      <figure>
-          <img src="../img/ojos.jpg" alt="ojos">
-      </figure>
-      <div class="info-producto">
-          <h2>ojos linda</h2>
-          <p class="precio">$880</p>
-          <button type="button" class="btn btn">Añadir a carrito</button>
-      </div>
+    <figure>
+        <img src="../img/ojos.jpg" alt="ojos">
+    </figure>
+    <div class="info-product">
+        <h2>ojos linda</h2>
+        <p class="price">$880</p>
+        <button class="btn btn btn-add-cart">Añadir al carrito</button>
+  
+    </div>
   </div>
   <div class="item">
-      <figure>
-          <img src="../img/ojos1.jpg" alt="ojos1">
-      </figure>
-      <div class="info-producto">
-          <h2>ojos linda</h2>
-          <p class="precio">$880</p>
-          <button type="button" class="btn btn">Añadir a carrito</button>
-      </div>
+    <figure>
+        <img src="../img/ojos1.jpg" alt="ojos1">
+    </figure>
+    <div class="info-product">
+        <h2>ojos linda</h2>
+        <p class="price">$880</p>
+        <button class="btn btn btn-add-cart">Añadir al carrito</button>
+  
+    </div>
   </div>
   <div class="item">
-      <figure>
-          <img src="../img/pinza.jpg" alt="pinza">
-      </figure>
-      <div class="info-producto">
-          <h2>pinza</h2>
-          <p class="precio">$890</p>
-          <button type="button" class="btn btn">Añadir a carrito</button>
-      </div>
+    <figure>
+        <img src="../img/pinza.jpg" alt="pinza">
+    </figure>
+    <div class="info-product">
+        <h2>pinza</h2>
+        <p class="price">$890</p>
+        <button class="btn btn btn-add-cart">Añadir al carrito</button>
+  
+    </div>
   </div>
   <div class="item">
-      <figure>
-          <img src="../img/pinza.jpg" alt="base">
-      </figure>
-      <div class="info-producto">
-          <h2>Pinza</h2>
-          <p class="precio">$80</p>
-          <button type="button" class="btn btn">Añadir a carrito</button>
-      </div>
+    <figure>
+        <img src="../img/pinza.jpg" alt="base">
+    </figure>
+    <div class="info-product">
+        <h2>Pinza</h2>
+        <p class="price">$80</p>
+        <button class="btn btn btn-add-cart">Añadir al carrito</button>
+  
+    </div>
   </div>
-</div>
-
-
-
-
-<!-----------------------------------Aca va a ir los enlaces para las subpaginas------------------------------------------->
-<ul class="enlace">
-    <p><a href="../pages/depilacion.html" class="enlace1">Depilacion</a></p>
-
-    <p><a href="../pages/cursos.html" class="enlace1">Cursos</a>
-    </p>
-    <p><a href="../pages/tratamiento.html" class="enlace1">Tratamiento</a>
-    </p>
-    <p><a href="../pages/equipo.html" class="enlace1 ">Equipo</a>
-    </p>
-</ul>
-</div>
-
+  </div>
+  
+  
+  
+  
+  
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link enlace" href="../index.html">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link  enlace" href="./productos.html">Linea Profesional</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link enlace" href="./crema.html">Rouse Arey</a>
+    </li>
+  </ul>
+  
 <script src="../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>

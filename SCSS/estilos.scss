@@ -1,6 +1,5 @@
 @import "hoja-inicio","subpagina";
 
-
 *::after,
 *::before,
 
@@ -22,6 +21,9 @@ body {
     stroke: black;
 }
 
+.icon-cart:hover{
+    cursor: pointer;
+}
 
 img {
     max-width: 100%;
@@ -100,7 +102,7 @@ header {
 }
 
 .icon-close:hover {
-    stroke: rgb(219, 119, 119);
+    stroke: rgb(54, 10, 96);
     cursor: pointer;
 }
 
@@ -109,15 +111,17 @@ header {
 }
 
 
-.cart-total {
+.cart-total{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 20px 0;
+    gap: 20px;
+}
 
-    gap: 20px h3 {
-        font-size: 20px;
-        font-weight: 700;
-    }
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .total-a-pagar {
@@ -164,7 +168,7 @@ header {
     transform: scale(1.2);
 }
 
-.info-producto {
+.info-product {
     padding: 15px 30px;
     line-height: 2;
     display: flex;
@@ -172,12 +176,12 @@ header {
     gap: 10px;
 }
 
-.precio {
+.price{
     font-size: 18px;
     font-weight: 900
 }
 
-.info-producto button {
+.info-product button {
     border: none;
     padding: 15px 10px;
     cursor: pointer;
@@ -186,8 +190,17 @@ header {
 /*-----------------------para la pagina de inicio--------------------------*/
 
 h1 {
+    color: transparent;
+    background-clip: text;
+    margin: 1rem;
     text-align: center;
+    text-shadow: 2px 2px 4px #64646499;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(61, 22, 78);
+    
 }
+
+
 
 .pago {
     float: left;
