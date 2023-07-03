@@ -319,3 +319,11 @@ p {
 }
 
 /*termina aca el estilo de los buttons*/
+/****************ARREGLO DEL CARRUSEL********************/
+.carousel-indicators .indi {
+  border-radius: 50%;
+  background-color: #603e8d;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: 5 6px;
+}
