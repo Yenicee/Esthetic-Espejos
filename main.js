@@ -1,145 +1,129 @@
-const btnCart = document.querySelector('.container-icon');
-const containerCartProducts = document.querySelector('.container-cart-products');
+// //LOGICA PARA EL CARRITO DE COMPRAS
+// document.addEventListener('DOMContentLoaded', () => {
+//   const cartIcon = document.querySelector('.container-cart-icon');
+//   const cartCount = document.getElementById('count-products');
+//   const cartProducts = document.querySelector('.container-cart-products');
+//   const cartTotal = document.querySelector('.cart-total');
+//   const cartEmpty = document.querySelector('.cart-empty');
+//   const addToCartButtons = document.querySelectorAll('.btn-add-cart');
+//   const closeCartButtons = document.querySelectorAll('.icon-close');
 
-btnCart.addEventListener('click', () => {
-    containerCartProducts.classList.toggle('hidden-cart');
-});
+//   // Initialize cart items as an empty array
+//   let cartItems = [];
 
-/* ========================= */
-const rowProduct = document.querySelector('.row-product');
+//   // Function to update the cart display
+//   const updateCartDisplay = () => {
+//     if (cartItems.length > 0) {
+//       cartCount.textContent = cartItems.length;
+//       cartEmpty.style.display = 'none';
+//       cartTotal.style.display = 'block';
 
-// Variable de arreglo de Productos
-let allProducts = [];
+//       // Calculate the total price of all items in the cart
+//       const totalPrice = cartItems.reduce((acc, item) => acc + item.price, 0);
+//       document.querySelector('.total-pagar').textContent = `$${totalPrice}`;
+//     } else {
+//       cartCount.textContent = '0';
+//       cartEmpty.style.display = 'block';
+//       cartTotal.style.display = 'none';
+//     }
+//   };
 
-const valorTotal = document.querySelector('.total-pagar');
+//   // Function to add a product to the cart
+//   const addToCart = (productId) => {
+//     // Find the product with the given productId from your data or API
+//     // For this example, let's assume you have a data array with all products
+//     const product = data.find((item) => item.id === productId);
 
-const countProducts = document.querySelector('#contador-productos');
+//     if (product) {
+//       cartItems.push(product);
+//       updateCartDisplay();
+//     }
+//   };
 
-const cartEmpty = document.querySelector('.cart-empty');
-const cartTotal = document.querySelector('.cart-total');
+//   // Function to remove a product from the cart
+//   const removeFromCart = (productId) => {
+//     cartItems = cartItems.filter((item) => item.id !== productId);
+//     updateCartDisplay();
+//   };
 
-const addCartButtons = document.querySelectorAll('.btn-add-cart');
+//   // Function to handle the "Add to Cart" button click
+//   const handleAddToCartClick = (event) => {
+//     const productId = parseInt(event.target.dataset.productId);
+//     addToCart(productId);
+//   };
 
-addCartButtons.forEach(button => {
-    button.addEventListener('click', e => {
-        const product = e.target.parentElement;
+//   // Function to handle the "Remove from Cart" button click
+//   const handleRemoveFromCartClick = (event) => {
+//     const productId = parseInt(event.target.dataset.productId);
+//     removeFromCart(productId);
+//   };
 
-        const infoProduct = {
-            quantity: 1,
-            title: product.querySelector('h2').textContent,
-            price: product.querySelector('p').textContent,
-        };
+//   // Add event listeners to the "Add to Cart" buttons
+//   addToCartButtons.forEach((button) => {
+//     button.addEventListener('click', handleAddToCartClick);
+//   });
 
-        const exists = allProducts.some(product => product.title === infoProduct.title);
+//   // Add event listeners to the "Remove from Cart" buttons
+//   closeCartButtons.forEach((button) => {
+//     button.addEventListener('click', handleRemoveFromCartClick);
+//   });
 
-        if (exists) {
-            const products = allProducts.map(product => {
-                if (product.title === infoProduct.title) {
-                    product.quantity++;
-                    return product;
-                } else {
-                    return product;
-                }
-            });
-            allProducts = [...products];
-        } else {
-            allProducts = [...allProducts, infoProduct];
-        }
+//   // Event listener to show/hide the cart when the cart icon is clicked
+//   cartIcon.addEventListener('click', () => {
+//     cartProducts.classList.toggle('hidden-cart');
+//   });
+// });
 
-        showHTML();
-    });
-});
+ //SCROLL DE PRODUCTOS DE LA PAG INICIO
 
-rowProduct.addEventListener('click', e => {
-    if (e.target.classList.contains('icon-close')) {
-        const product = e.target.parentElement;
-        const title = product.querySelector('p').textContent;
-
-        allProducts = allProducts.filter(product => product.title !== title);
-
-        showHTML();
+ document.addEventListener("DOMContentLoaded", function () {
+    const sliderContainer = document.querySelector(".slider-container");
+    let isDragging = false;
+    let startPosition = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+  
+    function startDrag(event) {
+      event.preventDefault();
+      isDragging = true;
+      startPosition = getPositionX(event);
+      sliderContainer.style.cursor = "grabbing";
+      requestAnimationFrame(() => updateSlider(event)); // Pasamos el evento a la función updateSlider
     }
-});
-
-// Función para mostrar HTML
-const showHTML = () => {
-    if (!allProducts.length) {
-        cartEmpty.classList.remove('hidden');
-        rowProduct.classList.add('hidden');
-        cartTotal.classList.add('hidden');
-    } else {
-        cartEmpty.classList.add('hidden');
-        rowProduct.classList.remove('hidden');
-        cartTotal.classList.remove('hidden');
+  
+    function updateSlider(event) {
+      if (isDragging) {
+        const currentPosition = getPositionX(event);
+        const diffX = currentPosition - startPosition;
+        currentTranslate = prevTranslate + diffX;
+        setSliderPosition();
+        requestAnimationFrame(() => updateSlider(event));
+      }
     }
-
-    // Limpiar HTML
-    rowProduct.innerHTML = '';
-
-    let total = 0;
-    let totalOfProducts = 0;
-
-    allProducts.forEach(product => {
-        const containerProduct = document.createElement('div');
-        containerProduct.classList.add('cart-product');
-
-        containerProduct.innerHTML = `
-            <div class="info-cart-product">
-                <span class="cantidad-producto-carrito">${product.quantity}</span>
-                <p class="titulo-producto-carrito">${product.title}</p>
-                <span class="precio-producto-carrito">${product.price}</span>
-            </div>
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="icon-close"
-            >
-                <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                />
-            </svg>
-        `;
-
-        rowProduct.append(containerProduct);
-
-        total += parseInt(product.quantity * product.price.slice(1));
-        totalOfProducts += product.quantity;
-    });
-
-    valorTotal.innerText = `$${total}`;
-    countProducts.innerText = totalOfProducts;
-};
-
-showHTML();
-
-
-// Swal.fire(
-//     {
-//      title: 'Solo por hoy cupos limitados',
-//      text: 'En depilacion definitiva y un 10% descuento en productos',
-//      //da los segundos y desaparece solo
-//      timer: '5000',
-//      background: '#d0bff7b8',
-//      color:'white',
-//      position: 'bottom-end',
-//      confirmButtonColor:'#4f1ec0b8',
-//   }
-// ) 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+    function endDrag() {
+      isDragging = false;
+      prevTranslate = currentTranslate;
+      sliderContainer.style.cursor = "grab";
+    }
+  
+    function getPositionX(event) {
+      // Verificamos si es un evento de toque en dispositivos táctiles
+      return event.type.includes("touch") ? event.touches[0].clientX : event.clientX;
+    }
+  
+    function setSliderPosition() {
+      sliderContainer.style.transform = `translateX(${currentTranslate}px)`;
+    }
+  
+    sliderContainer.addEventListener("mousedown", startDrag);
+    sliderContainer.addEventListener("mousemove", updateSlider);
+    sliderContainer.addEventListener("mouseup", endDrag);
+    sliderContainer.addEventListener("mouseleave", endDrag);
+  
+    // Permite el desplazamiento en pantallas táctiles
+    sliderContainer.addEventListener("touchstart", startDrag);
+    sliderContainer.addEventListener("touchmove", updateSlider);
+    sliderContainer.addEventListener("touchend", endDrag);
+    sliderContainer.addEventListener("touchcancel", endDrag);
+  });

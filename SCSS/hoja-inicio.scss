@@ -230,16 +230,10 @@ hr {
   color: rgb(97, 27, 134);
 }
 
-p {
-  font-family: 'Times New Roman', Times, serif;
-  color: #1b0627;
-  font-size: medium;
-}
-
 .h55 {
   text-align: center;
   margin: 15px;
-  font-size: 30px;
+  font-size:3.5rem;
   color: #2d0439;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -326,4 +320,45 @@ p {
   width: 0.5rem;
   height: 0.5rem;
   margin: 5 6px;
+}
+
+/*ACA ESTILO DE PAG INICIO SCROLL DE PRODUCT MAS VENDIDOS*/
+.scrollGenerl{
+  background: linear-gradient(rgba(175, 116, 217, 0.403), rgba(144, 105, 189, 0.754), rgb(106, 67, 120), rgb(27, 3, 30))
+}
+
+.saleH2{
+  padding: 0.8rem;
+  color: #2d0439;
+ font-weight: 700;
+ font-size: 3.5rem;
+}
+
+.cta{
+  padding:0.8rem ;
+}
+
+.slider-outer-container {
+  padding: 0.8rem;
+  overflow-x: scroll;
+}
+
+.slider-container {
+  display: flex;
+}
+
+.slider {
+  display: flex;
+}
+
+.cardSilder {
+  flex: 0 0 100%;
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.cardSilder img {
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
 }
