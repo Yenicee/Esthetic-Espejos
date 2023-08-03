@@ -64,7 +64,7 @@
 <h1>Mazz Makeup</h1>
 <br><hr>
 <!----------------------------items de los maquillajes----------------------------------------------------->
-<!--------------aca comienza el carrito------------------------------>
+< <!--------------aca comienza el carrito------------------------------>
 <div class="container-icon">
     <div class="container-cart-icon">
         <svg
@@ -82,17 +82,19 @@
             />
         </svg>
         <div class="count-products">
-            <span id="contador-productos">0</span>
+            <span id="count-products">0</span>
         </div>
     </div>
-  
+
     <div class="container-cart-products hidden-cart">
         <div class="row-product hidden">
             <div class="cart-product">
                 <div class="info-cart-product">
-                    <span class="cantidad-producto-carrito">1</span>
-                    <p class="titulo-producto-carrito">base</p>
-                    <span class="precio-producto-carrito">$80</span>
+                    <span class="cantidad-producto-carrito">{}</span>
+                    <p class="titulo-producto-carrito">{}</p>
+                    <p class="description">{}</p>
+                    
+                    <span class="precio-producto-carrito">$</span>
                 </div>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -110,14 +112,15 @@
                 </svg>
             </div>
         </div>
-  
+
         <div class="cart-total hidden">
             <h3>Total:</h3>
-            <span class="total-pagar">$200</span>
+            <span class="total-pagar">$</span>
         </div>
         <p class="cart-empty">El carrito está vacío</p>
     </div>
-  </div>
+</div>
+
   
   </header>
   <!--------------COMIENZO DE TODOS LOS PRODUCTOS DE LA TIENDA--------------------->
@@ -271,6 +274,7 @@
   </ul>
   
 <script src="../main.js"></script>
+<script src="../cart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
