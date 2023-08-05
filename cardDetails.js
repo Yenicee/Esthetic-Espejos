@@ -21,7 +21,7 @@ function showDetails(productNumber) {
         descriptionElement.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quasi iusto error quae natus sapient";
         detailsElement.querySelector("img").src = "../img/img product/MALBEC.JPG";
     } else if (productNumber === 5) {
-        titleElement.textContent = ">Mazz vits";
+        titleElement.textContent = "Mazz vits";
         descriptionElement.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quasi iusto error quae natus sapient";
         detailsElement.querySelector("img").src = "../img/img product/MAZZ VITC.jpg";
     } else if (productNumber === 6) {
