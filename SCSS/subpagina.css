@@ -26,9 +26,8 @@
   color: white;
 }
 
-p::first-letter {
-  color: rgb(55, 14, 93);
-  font-size: xx-large;
-}
-
-/*GENERAR MAYUSCULA A TARJETA DE TRATAMIENTO FACIAL*//*# sourceMappingURL=subpagina.css.map */
+p {
+  font-family: "Times New Roman", Times, serif;
+  color: #1b0627;
+  font-size: 1rem;
+}/*# sourceMappingURL=subpagina.css.map */

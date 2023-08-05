@@ -92,9 +92,10 @@ nav .blanco a:hover:after {
 /************************************Aca termina el estilo *************************************************/
 /*******************todo aca es del footer********************************/
 footer {
-  background-color: rgba(174, 114, 209, 0.6823529412);
+  background-color: rgba(64, 37, 71, 0.3254901961);
   padding: 30px 0;
   margin: 15px 0;
+  border-radius: 2% 5% 2% 5%;
 }
 
 .container {
@@ -151,26 +152,53 @@ li {
 }
 
 /*****aca diseño de los botones sociales**********/
-.buttons {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  margin: 0 10px;
-  background-color: #fff;
-  box-shadow: 0px 0px 4px rgba(98, 94, 94, 0.1607843137);
-  transition: 0.3s;
+.bi-instagram {
+  color: #7e1b44;
+  margin: 2px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  border: #004dff;
+  transition: 0.5s;
+  border-radius: 50px;
+  box-shadow: 2px 2px 3px #999;
 }
 
-.buttons:hover {
-  background-color: #f2f2f2;
-  box-shadow: 0px 0px 6px 3px rgba(200, 40, 40, 0.8941176471);
+.bi-instagram:hover {
+  transform: scale(1.2);
 }
 
-.buttons svg {
-  transition: 0.3s;
-  height: 20px;
+.bi-whatsapp {
+  color: #0e6823;
+  margin: 5px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  border: #004dff;
+  transition: 0.5s;
+  border-radius: 50px;
+  box-shadow: 2px 2px 3px #999;
 }
 
+.bi-whatsapp:hover {
+  transform: scale(1.2);
+}
+
+.bi-facebook {
+  color: rgb(29, 29, 185);
+  margin: 5px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  border: #004dff;
+  transition: 0.5s;
+  border-radius: 50px;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.bi-facebook:hover {
+  transform: scale(1.2);
+}
+
+/************ACA TERMINA LOS BOTONES SOCIALES************************/
+/**********************************************************/
 a {
   color: #1d042c;
   text-decoration: none;
@@ -185,18 +213,14 @@ a {
 }
 
 hr {
-  color: rgb(140, 12, 12);
-}
-
-p {
-  font-family: "Times New Roman", Times, serif;
+  color: rgb(97, 27, 134);
 }
 
 .h55 {
   text-align: center;
   margin: 15px;
-  font-size: 35px;
-  color: #15051a;
+  font-size: 3.5rem;
+  color: #2d0439;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -222,7 +246,8 @@ p {
   background-color: #44124b;
   /* Green */
   border: none;
-  color: rgb(104, 100, 107);
+  color: rgb(255, 254, 255);
+  margin: 0.5rem 0.2rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -249,17 +274,6 @@ p {
   left: 100%;
 }
 
-.btn::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background-color: rgba(86, 34, 106, 0.746);
-  transition: all 0.5s ease-in-out;
-}
-
 .btn:hover::after {
   width: 100%;
 }
@@ -275,6 +289,56 @@ p {
 }
 
 /*termina aca el estilo de los buttons*/
+/****************ARREGLO DEL CARRUSEL********************/
+.carousel-indicators .indi {
+  border-radius: 50%;
+  background-color: #603e8d;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: 5 6px;
+}
+
+/*ACA ESTILO DE PAG INICIO SCROLL DE PRODUCT MAS VENDIDOS*/
+.scrollGenerl {
+  background: linear-gradient(rgba(175, 116, 217, 0.403), rgba(144, 105, 189, 0.754), rgb(106, 67, 120), rgb(27, 3, 30));
+}
+
+.saleH2 {
+  padding: 0.8rem;
+  color: #2d0439;
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+.cta {
+  padding: 0.8rem;
+}
+
+.slider-outer-container {
+  padding: 0.8rem;
+  overflow-x: scroll;
+}
+
+.slider-container {
+  display: flex;
+}
+
+.slider {
+  display: flex;
+}
+
+.cardSilder {
+  flex: 0 0 100%;
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.cardSilder img {
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+}
+
 .planta {
   color: rgb(22, 21, 21);
   text-align: center;
@@ -303,12 +367,12 @@ p {
   color: white;
 }
 
-p::first-letter {
-  color: rgb(55, 14, 93);
-  font-size: xx-large;
+p {
+  font-family: "Times New Roman", Times, serif;
+  color: #1b0627;
+  font-size: 1rem;
 }
 
-/*GENERAR MAYUSCULA A TARJETA DE TRATAMIENTO FACIAL*/
 *::after,
 *::before,
 * {
@@ -319,8 +383,12 @@ p::first-letter {
 
 body {
   margin-top: 0 auto;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: rgb(57, 52, 52);
+}
+
+/**************************STYLE THE SHOPPING CART*************************************/
+.container-icon {
+  position: relative;
 }
 
 .icon-cart {
@@ -329,19 +397,8 @@ body {
   stroke: black;
 }
 
-img {
-  max-width: 100%;
-}
-
-/*HEADER*/
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 0 40px 0;
-}
-
-.container-icon {
-  position: relative;
+.icon-cart:hover {
+  cursor: pointer;
 }
 
 .count-products {
@@ -358,7 +415,7 @@ header {
   border-radius: 50%;
 }
 
-.container-cart-productos {
+.container-cart-products {
   position: absolute;
   top: 50px;
   background-color: beige;
@@ -366,6 +423,20 @@ header {
   right: 0;
   z-index: 1;
   box-shadow: 0 10px 20px black(0, 0, 0, 0.2);
+}
+
+.hidden-cart {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 40px 0;
+}
+
+img {
+  max-width: 100%;
 }
 
 .cart-product {
@@ -382,19 +453,19 @@ header {
   flex: 0.8;
 }
 
-.cantidad-producto-carrito {
+.amount-product-cart {
   font-weight: 400;
   font-size: 20px;
 }
 
-.precio-producto-carrito {
+.product-title {
+  font-size: 20px;
+}
+
+.price-cart {
   font-weight: 700;
   font-size: 20px;
   margin-left: 10px;
-}
-
-.titulo-producto-carrito {
-  font-size: 20px;
 }
 
 .icon-close {
@@ -403,33 +474,23 @@ header {
 }
 
 .icon-close:hover {
-  stroke: rgb(219, 119, 119);
+  stroke: rgb(54, 10, 96);
   cursor: pointer;
 }
 
-#contador-productos {
+#count-products {
   font-size: 12px;
 }
 
-.cart-total {
+.totalPurchase {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 20px 0;
-  gap: 20px h3;
-  gap-font-size: 20px;
-  gap-font-weight: 700;
+  gap: 20px;
 }
 
-.total-a-pagar {
-  font-size: 15px;
-  font-weight: 900;
-}
-
-.hidden-cart {
-  display: none;
-}
-
-/*ACA EMPIEZA LOS ITEM DE LA TIENDA*/
+/*********** ITEM THE SHOPPING********/
 .container-item {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -462,7 +523,7 @@ header {
   transform: scale(1.2);
 }
 
-.info-producto {
+.info-product {
   padding: 15px 30px;
   line-height: 2;
   display: flex;
@@ -470,20 +531,96 @@ header {
   gap: 10px;
 }
 
-.precio {
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  color: rgb(41, 10, 68);
+}
+
+.price {
   font-size: 18px;
   font-weight: 900;
 }
 
-.info-producto button {
+.buttonCart {
+  border-radius: 0.5rem;
+  background-color: #411762;
   border: none;
-  padding: 15px 10px;
+  color: white;
+  padding: 0.5rem 0.2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttonCart::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: skewX(-30deg);
+  transition: all 1s ease-in-out;
+}
+
+.buttonCart:hover::before {
+  left: 100%;
+}
+
+.buttonProductSee {
+  border: none;
+  background: none;
+}
+
+.buttonProductSee span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: rgb(47, 13, 95);
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #533688;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.buttonProductSee:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /*-----------------------para la pagina de inicio--------------------------*/
 h1 {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  margin: 1rem;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.6);
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(61, 22, 78);
 }
 
 .pago {
@@ -493,4 +630,6 @@ h1 {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/***********DETAILS CARD PRODUCT************************//*# sourceMappingURL=estilos.css.map */

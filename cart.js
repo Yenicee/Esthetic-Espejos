@@ -8,7 +8,7 @@ const items = document.querySelectorAll(".item");
 
 // Función para cargar los productos del Local Storage al cargar la página
 function loadCartItemsFromLocalStorage() {
-  const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+   const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 
   if (cartItems.length > 0) {
     cartProductsContainer.innerHTML = "";
@@ -21,8 +21,9 @@ function loadCartItemsFromLocalStorage() {
     updateCartTotal(total);
     updateCartCount(cartItems.length);
 
-    cartEmpty.style.display = "none";
+    cartEmpty.style.display = "true";
     cartProductsContainer.classList.remove("hidden-cart");
+    
   }
 }
 
@@ -32,7 +33,7 @@ function saveCartItemsToLocalStorage(cartItems) {
 }
 
 // Función para crear un elemento del carrito
-function createCartItemElement(title, price, quantity, description) {
+function createCartItemElement(title, price, quantity, description, total) {
   const cartProduct = document.createElement("div");
   cartProduct.classList.add("row-product");
   cartProduct.innerHTML = `
@@ -41,7 +42,8 @@ function createCartItemElement(title, price, quantity, description) {
         <span class="cantidad-producto-carrito">${quantity}</span>
         <p class="titulo-producto-carrito">${title}</p>
         <p class="description">${description}</p>
-        <span class="precio-producto-carrito">$${(price * quantity).toFixed(2)}</span>
+        <span class="precio-producto-carrito">$${price}</span>
+        <span class="total-pagar">$${total}</span>
       </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +60,7 @@ function createCartItemElement(title, price, quantity, description) {
 
   const closeButton = cartProduct.querySelector(".icon-close");
   closeButton.addEventListener("click", removeCartItem);
-
+  
   return cartProduct;
 }
 
@@ -116,7 +118,7 @@ function removeCartItem(event) {
 
 // Asignar el evento "click" al botón "Añadir al carrito" de cada item.
 items.forEach((item) => {
-  const addButton = item.querySelector(".btn-add-cart");
+  const addButton = item.querySelector(".buttonCart");
   addButton.addEventListener("click", addToCart);
 });
 

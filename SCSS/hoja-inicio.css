@@ -92,9 +92,10 @@ nav .blanco a:hover:after {
 /************************************Aca termina el estilo *************************************************/
 /*******************todo aca es del footer********************************/
 footer {
-  background-color: rgba(174, 114, 209, 0.6823529412);
+  background-color: rgba(64, 37, 71, 0.3254901961);
   padding: 30px 0;
   margin: 15px 0;
+  border-radius: 2% 5% 2% 5%;
 }
 
 .container {
@@ -151,26 +152,53 @@ li {
 }
 
 /*****aca diseño de los botones sociales**********/
-.buttons {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  margin: 0 10px;
-  background-color: #fff;
-  box-shadow: 0px 0px 4px rgba(98, 94, 94, 0.1607843137);
-  transition: 0.3s;
+.bi-instagram {
+  color: #7e1b44;
+  margin: 2px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  border: #004dff;
+  transition: 0.5s;
+  border-radius: 50px;
+  box-shadow: 2px 2px 3px #999;
 }
 
-.buttons:hover {
-  background-color: #f2f2f2;
-  box-shadow: 0px 0px 6px 3px rgba(200, 40, 40, 0.8941176471);
+.bi-instagram:hover {
+  transform: scale(1.2);
 }
 
-.buttons svg {
-  transition: 0.3s;
-  height: 20px;
+.bi-whatsapp {
+  color: #0e6823;
+  margin: 5px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  border: #004dff;
+  transition: 0.5s;
+  border-radius: 50px;
+  box-shadow: 2px 2px 3px #999;
 }
 
+.bi-whatsapp:hover {
+  transform: scale(1.2);
+}
+
+.bi-facebook {
+  color: rgb(29, 29, 185);
+  margin: 5px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  border: #004dff;
+  transition: 0.5s;
+  border-radius: 50px;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.bi-facebook:hover {
+  transform: scale(1.2);
+}
+
+/************ACA TERMINA LOS BOTONES SOCIALES************************/
+/**********************************************************/
 a {
   color: #1d042c;
   text-decoration: none;
@@ -185,19 +213,13 @@ a {
 }
 
 hr {
-  color: rgb(140, 12, 12);
-}
-
-p {
-  font-family: "Times New Roman", Times, serif;
-  color: #1b0627;
-  font-size: medium;
+  color: rgb(97, 27, 134);
 }
 
 .h55 {
   text-align: center;
   margin: 15px;
-  font-size: 35px;
+  font-size: 3.5rem;
   color: #2d0439;
   font-family: "Times New Roman", Times, serif;
 }
@@ -224,7 +246,8 @@ p {
   background-color: #44124b;
   /* Green */
   border: none;
-  color: rgb(104, 100, 107);
+  color: rgb(255, 254, 255);
+  margin: 0.5rem 0.2rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -251,17 +274,6 @@ p {
   left: 100%;
 }
 
-.btn::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background-color: rgba(86, 34, 106, 0.746);
-  transition: all 0.5s ease-in-out;
-}
-
 .btn:hover::after {
   width: 100%;
 }
@@ -276,4 +288,53 @@ p {
   background-color: #582c61;
 }
 
-/*termina aca el estilo de los buttons*//*# sourceMappingURL=hoja-inicio.css.map */
+/*termina aca el estilo de los buttons*/
+/****************ARREGLO DEL CARRUSEL********************/
+.carousel-indicators .indi {
+  border-radius: 50%;
+  background-color: #603e8d;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: 5 6px;
+}
+
+/*ACA ESTILO DE PAG INICIO SCROLL DE PRODUCT MAS VENDIDOS*/
+.scrollGenerl {
+  background: linear-gradient(rgba(175, 116, 217, 0.403), rgba(144, 105, 189, 0.754), rgb(106, 67, 120), rgb(27, 3, 30));
+}
+
+.saleH2 {
+  padding: 0.8rem;
+  color: #2d0439;
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+.cta {
+  padding: 0.8rem;
+}
+
+.slider-outer-container {
+  padding: 0.8rem;
+  overflow-x: scroll;
+}
+
+.slider-container {
+  display: flex;
+}
+
+.slider {
+  display: flex;
+}
+
+.cardSilder {
+  flex: 0 0 100%;
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.cardSilder img {
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=hoja-inicio.css.map */

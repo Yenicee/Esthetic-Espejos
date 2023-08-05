@@ -67,19 +67,10 @@
   <!--------------aca comienza el carrito------------------------------>
   <div class="container-icon">
     <div class="container-cart-icon">
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="icon-cart"
-        >
-            <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-            />
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="icon-cart">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
         </svg>
         <div class="count-products">
             <span id="count-products">0</span>
@@ -93,183 +84,142 @@
                     <span class="cantidad-producto-carrito">{}</span>
                     <p class="titulo-producto-carrito">{}</p>
                     <p class="description">{}</p>
-                    
+
                     <span class="precio-producto-carrito">$</span>
                 </div>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="icon-close"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M6 18L18 6M6 6l12 12"
-                    />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon-close">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
+                <div>
+                    <span class="total-pagar">$0.00</span>
+                </div>
+
+                <button class="btn-checkout">checkout</button>
             </div>
         </div>
 
-        <div class="cart-total hidden">
-            <h3>Total:</h3>
-            <span class="total-pagar">$</span>
-        </div>
-        <p class="cart-empty">El carrito está vacío</p>
     </div>
 </div>
 
+
 </header>
- <!--------------COMIENZO DE TODOS LOS PRODUCTOS DE LA TIENDA--------------------->
- <div class="container-item">
-  <div class="item">
-      <figure>
-          <img src="../img/base.jpg" alt="producto">
-      </figure>
-      <div class="info-product">
-          <h2>Base calidad</h2>
-          <p class="description">Salchichas De Algodón Reciclado la mejor base roja del mercado.
-              ¡Luce una apariencia más joven hoy mismo!
-          </p>
-          <p class="price">$80</p>
-          <p class="stock">left</p>
-          <button class="btn btn btn-add-cart">Añadir al carrito</button>
-      </div>
-  </div>
-  <div class="item">
-      <figure>
-          <img src="../img/base1.jpg" alt="producto">
-      </figure>
-      <div class="info-product">
-          <h2>Base1 calidad</h2>
-          <p class="description">Salchichas De Algodón Reciclado la mejor base roja del mercado.
-              ¡Luce una apariencia más joven hoy mismo!
-          </p>
-          <p class="price">$580</p>
-          <p class="stock">left</p>
-          <button class="btn btn btn-add-cart">Añadir al carrito</button>
-      </div>
-  </div>
-  <div class="item">
-      <figure>
-          <img src="../img/brocha.jpg" alt="brocha">
-      </figure>
-      <div class="info-product">
-          <h2>Brocha linda</h2>
-          <p class="description">Salchichas De Algodón Reciclado la mejor base roja del mercado.
-              ¡Luce una apariencia más joven hoy mismo!
-          </p>
-          <p class="price">$660</p>
-          <p class="stock">left</p>
-          <button class="btn btn btn-add-cart">Añadir al carrito</button>
-      </div>
-  </div>
-  <div class="item">
-      <figure>
-          <img src="../img/corrector.jpg" alt="Corrector">
-      </figure>
-      <div class="info-product">
-          <h2>Corrector linda</h2>
-          <p class="description">Salchichas De Algodón Reciclado la mejor base roja del mercado.
-              ¡Luce una apariencia más joven hoy mismo!
-          </p>
-          <p class="price">$800</p>
-          <p class="stock">left</p>
-          <button class="btn btn btn-add-cart">Añadir al carrito</button>
-
-      </div>
-  </div>
-  <div class="item">
-      <figure>
-          <img src="../img/labio.jpg" alt="labio">
-      </figure>
-      <div class="info-product">
-          <h2>Base calidad</h2>
-          <p class="description">Salchichas De Algodón Reciclado la mejor base roja del mercado.
-              ¡Luce una apariencia más joven hoy mismo!
-          </p>
-          <p class="price">$980</p>
-          <p class="stock">left</p>
-          <button class="btn btn btn-add-cart">Añadir al carrito</button>
-
-      </div>
-  </div>
-  <div class="item">
-      <figure>
-          <img src="../img/ojos.jpg" alt="ojos">
-      </figure>
-      <div class="info-product">
-          <h2>ojos linda</h2>
-          <p class="description">Salchichas De Algodón Reciclado la mejor base roja del mercado.
-              ¡Luce una apariencia más joven hoy mismo!
-          </p>
-          <p class="price">$880</p>
-          <p class="stock">left</p>
-          <button class="btn btn btn-add-cart">Añadir al carrito</button>
-
-      </div>
-  </div>
-  <div class="item">
-      <figure>
-          <img src="../img/ojos1.jpg" alt="ojos1">
-      </figure>
-      <div class="info-product">
-          <h2>ojos linda</h2>
-          <p class="description">Salchichas De Algodón Reciclado la mejor base roja del mercado.
-              ¡Luce una apariencia más joven hoy mismo!
-          </p>
-          <p class="price">$880</p>
-          <p class="stock">left</p>
-          <button class="btn btn btn-add-cart">Añadir al carrito</button>
-
-      </div>
-  </div>
-  <div class="item">
-      <figure>
-          <img src="../img/pinza.jpg" alt="pinza">
-      </figure>
-      <div class="info-product">
-          <h2>pinza</h2>
-          <p class="description">Salchichas De Algodón Reciclado la mejor base roja del mercado.
-              ¡Luce una apariencia más joven hoy mismo!
-          </p>
-          <p class="price">$890</p>
-          <p class="stock">left</p>
-          <button class="btn btn btn-add-cart">Añadir al carrito</button>
-
-      </div>
-  </div>
-  <div class="item">
-      <figure>
-          <img src="../img/pinza.jpg" alt="base">
-      </figure>
-      <div class="info-product">
-          <h2>Pinza</h2>
-          <p class="description">Salchichas De Algodón Reciclado la mejor base roja del mercado.
-              ¡Luce una apariencia más joven hoy mismo!
-          </p>
-          <p class="price">$80</p>
-          <p class="stock">left</p>
-          <button class="btn btn btn-add-cart">Añadir al carrito</button>
-
-      </div>
-  </div>
+<!--------------COMIENZO DE TODOS LOS PRODUCTOS DE LA TIENDA--------------------->
+<div class="container-item">
+<div class="item">
+    <figure>
+        <img src="../img/img product/agua mise.jpg" alt="producto">
+    </figure>
+    <div class="info-product">
+        <h2>Agua Miselar</h2>
+        <p class="price">$80</p>
+        <button class="buttonProductSee">Ver producto</button>
+        <button id="button-buys" data-product="123" class="buttonCart">Añadir al carrito</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="../img/img product/crema ros.jpg" alt="producto">
+    </figure>
+    <div class="info-product">
+        <h2>Crema Ros</h2>
+        <p class="price">$80</p>
+        <button class="buttonProductSee">Ver producto</button>
+        <button id="button-buys" data-product="123" class="buttonCart">Añadir al carrito</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="../img/img product/crema.png" alt="producto">
+    </figure>
+    <div class="info-product">
+        <h2>Crema Mineral</h2>
+        <p class="price">$80</p>
+        <button class="buttonProductSee">Ver producto</button>
+        <button id="button-buys" data-product="123" class="buttonCart">Añadir al carrito</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="../img/img product/MALBEC.JPG" alt="producto">
+    </figure>
+    <div class="info-product">
+        <h2>Malec</h2>
+        <p class="price">$80</p>
+        <button class="buttonProductSee">Ver producto</button>
+        <button id="button-buys" data-product="123" class="buttonCart">Añadir al carrito</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="../img/img product/MAZZ VITC.jpg" alt="producto">
+    </figure>
+    <div class="info-product">
+        <h2>Mazz vitc</h2>
+        <p class="price">$80</p>
+        <button class="buttonProductSee">Ver producto</button>
+        <button id="button-buys" data-product="123" class="buttonCart">Añadir al carrito</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="../img/img product/omg gloss.jpg" alt="producto">
+    </figure>
+    <div class="info-product">
+        <h2>Gloss</h2>
+        <p class="price">$80</p>
+        <button class="buttonProductSee">Ver producto</button>
+        <button id="button-buys" data-product="123" class="buttonCart">Añadir al carrito</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="../img/img product/serum.jpg" alt="producto">
+    </figure>
+    <div class="info-product">
+        <h2>Serum</h2>
+        <p class="price">$80</p>
+        <button class="buttonProductSee">Ver producto</button>
+        <button id="button-buys" data-product="123" class="buttonCart">Añadir al carrito</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="../img/img product/posteo agua micelar 6 en 1.png" alt="producto">
+    </figure>
+    <div class="info-product">
+        <h2>Micelar</h2>
+        <p class="price">$80</p>
+        <button class="buttonProductSee">Ver producto</button>
+        <button id="button-buys" data-product="123" class="buttonCart">Añadir al carrito</button>
+    </div>
+</div>
+<div class="item">
+    <figure>
+        <img src="../img/crema ros.jpg" alt="producto">
+    </figure>
+    <div class="info-product">
+        <h2>Crema roso</h2>
+        <p class="price">$80</p>
+        <button class="buttonProductSee">Ver producto</button>
+        <button id="button-buys" data-product="123" class="buttonCart">Añadir al carrito</button>
+    </div>
+</div>
 </div>
 
-<!-----------------------------------Aca va a ir los link para los otros productos------------------------------------------->
+<!-----------------link para ir a los otros productos--------------------------------->
+
+
 <ul class="nav justify-content-center">
-  <li class="nav-item">
+<li class="nav-item">
     <a class="nav-link enlace" href="../index.html">Inicio</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link  enlace" href="./maquillaje.html">Mazz Makeup</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link enlace" href="./productos.html">Linea Profesional</a>
-  </li>
- 
+</li>
+<li class="nav-item">
+    <a class="nav-link enlace" href="./maquillaje.html">Mazz Makeup</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link  enlace" href="./crema.html">Rouse Arey</a>
+</li>
 </ul>
 
 <script src="../main.js"></script>
