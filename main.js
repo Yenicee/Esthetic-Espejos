@@ -40,12 +40,12 @@
       sliderContainer.style.transform = `translateX(${currentTranslate}px)`;
     }
   
-    sliderContainer.addEventListener("mousedown", startDrag);
-    sliderContainer.addEventListener("mousemove", updateSlider);
-    sliderContainer.addEventListener("mouseup", endDrag);
-    sliderContainer.addEventListener("mouseleave", endDrag);
+  sliderContainer.addEventListener("mousedown", startDrag);
+   sliderContainer.addEventListener("mousemove", updateSlider);
+   sliderContainer.addEventListener("mouseup", endDrag);
+   sliderContainer.addEventListener("mouseleave", endDrag);
   
-    // Permite el desplazamiento en pantallas táctiles
+   // Permite el desplazamiento en pantallas táctiles
     sliderContainer.addEventListener("touchstart", startDrag);
     sliderContainer.addEventListener("touchmove", updateSlider);
     sliderContainer.addEventListener("touchend", endDrag);
