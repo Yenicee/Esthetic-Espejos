@@ -60,6 +60,18 @@ const cartItems = [];
 const cartCountElement = document.getElementById('cart-count');
 const totalElement = document.getElementById('total');
 const cartContainer = document.querySelector('.cart-container');
+const cartIcon = document.querySelector('.cart-icon');
+
+cartIcon.addEventListener('click', () => {
+    cartContainer.style.display = cartContainer.style.display === 'block' ? 'none' : 'block';
+});
+
+// Cerrar el carrito si se hace clic fuera de él
+document.addEventListener('click', (event) => {
+    if (!cartIcon.contains(event.target) && !cartContainer.contains(event.target)) {
+        cartContainer.style.display = 'none';
+    }
+});
 
 function countProductOccurrences(item) {
     return cartItems.filter(cartItem => cartItem.name === item.name).length;
@@ -70,7 +82,7 @@ function updateCartCount() {
 }
 
 function updateTotal() {
-    const total = cartItems.reduce((acc, item) => acc + item.price, 0);
+    const total = cartItems.reduce((acc, item) => acc + (item.price * item.quantity), 0);
     totalElement.textContent = total;
 }
 
@@ -89,22 +101,23 @@ function renderCart() {
 
 
         cartItem.innerHTML = `
-            <div class="item">
-                <figure>
-                    <img src="${item.image}" alt="${item.name}">
-                </figure>
-                <div class="info-product">
-                    <h2>${item.name}</h2>
-                    <p class="price">$${item.price}</p>
-                    <div class="quantity-control">
+        <div class="item">
+            <figure>
+                <img src="${item.image}" alt="${item.name}">
+            </figure>
+            <div class="info-product">
+                <h2>${item.name}</h2>
+                <p class="price">$${item.price}</p>
+                <div class="quantity-control">
                     <button class="quantity-btn" onclick="decreaseQuantity(${index})">-</button>
-                    <p class="quantity">${count}</p>
+                    <p class="quantity">${item.quantity}</p>
                     <button class="quantity-btn" onclick="increaseQuantity(${index})">+</button>
-                      </div>
-                    <button onclick="removeFromCart(${index})">Eliminar</button>
                 </div>
+                <button onclick="removeFromCart(${index})">Eliminar</button>
+                <p>Total: $<span class="item-total">${item.price * item.quantity}</span></p>
             </div>
-        `;
+        </div>
+    `;
 
         cartContainer.appendChild(cartItem);
     });
@@ -113,17 +126,10 @@ function renderCart() {
     updateTotal();
 }
 
-
 function addToCart(productIndex) {
     const product = products[productIndex];
-    const existingCartItemIndex = cartItems.findIndex(item => item.name === product.name);
-
-    if (existingCartItemIndex !== -1) {
-        cartItems[existingCartItemIndex].quantity += 1;
-    } else {
-        cartItems.push({ ...product, quantity: 1 });
-    }
-
+    product.quantity = 1; // Inicializa la cantidad en 1
+    cartItems.push(product);
     renderCart();
 }
 
