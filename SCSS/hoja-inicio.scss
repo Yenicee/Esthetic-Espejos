@@ -128,7 +128,7 @@ footer {
 
 /*dar estilo al h4*/
 h4 {
-  font-size: 20px;
+  font-size: 2rem;
   margin-bottom: 15px;
   color: #222020;
   text-shadow: 2px 2px 4px #64646499;
@@ -139,7 +139,7 @@ h4 {
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  animation: text 5s linear infinite;
+  animation: text 4s linear infinite;
 }
 
 @keyframes text {

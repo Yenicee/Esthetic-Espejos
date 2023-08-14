@@ -69,7 +69,7 @@ cartIcon.addEventListener('click', () => {
 // Cerrar el carrito si se hace clic fuera de él
 document.addEventListener('click', (event) => {
     if (!cartIcon.contains(event.target) && !cartContainer.contains(event.target)) {
-        cartContainer.style.display = 'none';
+        cartContainer.style.display = 'true';
     }
 });
 
@@ -98,29 +98,35 @@ function renderCart() {
         const cartItem = document.createElement('div');
         cartItem.classList.add('cart-item');
         const count = countProductOccurrences(item);
-
+        
 
         cartItem.innerHTML = `
         <div class="item">
-            <figure>
-                <img src="${item.image}" alt="${item.name}">
-            </figure>
-            <div class="info-product">
-                <h2>${item.name}</h2>
-                <p class="price">$${item.price}</p>
-                <div class="quantity-control">
-                    <button class="quantity-btn" onclick="decreaseQuantity(${index})">-</button>
-                    <p class="quantity">${item.quantity}</p>
-                    <button class="quantity-btn" onclick="increaseQuantity(${index})">+</button>
-                </div>
-                <button onclick="removeFromCart(${index})">Eliminar</button>
-                <p>Total: $<span class="item-total">${item.price * item.quantity}</span></p>
+        <figure>
+            <img src="${item.image}" alt="${item.name}">
+        </figure>
+        <div class="info-product">
+            <h2>${item.name}</h2>
+            <p class="price">$${item.price}</p>
+            <div class="quantity-control">
+                <button class="quantity-btn" onclick="decreaseQuantity(${index})">-</button>
+                <p class="quantity">${item.quantity}</p>
+                <button class="quantity-btn" onclick="increaseQuantity(${index})">+</button>
             </div>
+            <button onclick="removeFromCart(${index})">Eliminar</button>
+           
         </div>
+    </div>
     `;
 
         cartContainer.appendChild(cartItem);
     });
+
+    const total = cartItems.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+    const totalElement = document.createElement('p');
+    totalElement.textContent = `Total: $${total}`;
+    cartContainer.appendChild(totalElement);
+
 
     updateCartCount();
     updateTotal();
