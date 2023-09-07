@@ -164,52 +164,16 @@ li {
 }
 
 /*****aca diseño de los botones sociales**********/
+.social-buttons {
+   list-style: none;
+  padding: 0;
+ }
 
-.bi-instagram {
-  color: #7e1b44;
-  margin: 2px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
-  border: #004dff;
-  transition: 0.5s;
-  border-radius: 50px;
-  box-shadow: 2px 2px 3px #999
+.social-buttons li {
+  display: inline-block;
+  margin-right:0.5rem; 
 }
 
-.bi-instagram:hover {
-  transform: scale(1.2);
-}
-
-.bi-whatsapp {
-  color: #0e6823;
-  margin: 5px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
-  border: #004dff;
-  transition: 0.5s;
-  border-radius: 50px;
-  box-shadow: 2px 2px 3px #999
-}
-
-.bi-whatsapp:hover {
-  transform: scale(1.2);
-}
-
-.bi-facebook {
-  color: rgb(29, 29, 185);
-  margin: 5px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
-  border: #004dff;
-  transition: 0.5s;
-  border-radius: 50px;
-  box-shadow: 2px 2px 3px #999
-}
-
-.bi-facebook:hover {
-  transform: scale(1.2);
-
-}
 /************ACA TERMINA LOS BOTONES SOCIALES************************/
 /**********************************************************/
 

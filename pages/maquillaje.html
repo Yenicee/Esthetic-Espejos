@@ -1,282 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Mazz Makeup</title>
     <link rel="icon" href="../img/logo_tami-removebg-preview.png">
 </head>
+
 <body class="container-fluid">
-      <!------------DA COMIENZO A LA BARRA DE NAVEGACION-------------------------->
- <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <a class="navbar-brand">
-      <img src="../img/logo_tami-removebg-preview.png" alt="miLogo" width="80" height="80">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-collapse mb-2 mb-lg-0 blanco ">
-       <li><a class="nav-link active" href="../index.html">Inicio</a></li> 
-        <li><a class="nav-link active" href="./depilacionDefinitiva.html">Depilacion Definitiva</a>
-          <!-------3 subpaginas de facial---------->
-        <li class="nav-item dropdown">
-          <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">Tratamientos Faciales</a>
-          <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./criofrecuencia.html">Criofrecuencia</a></li>
-              <li><a class="dropdown-item" href="./peeling.html">Peeling</a></li>
-              <li><a class="dropdown-item" href="./limpiezaProfunda.html">Limpieza Profunda</a></li>
-            </ul>
-      </li>
-      <!-----------------------------separar----------------------------->
-        <!------------5 subpaginas para tratamiento corporal------------------------>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-           Tratamiento corporal
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="./criolipolisisPlana.html">Criolipolisis Plana</a></li>
-            <li><a class="dropdown-item" href="./lipolaser.html">Lipolaser</a></li>
-            <li><a class="dropdown-item" href="./criofrecuencia.html">Criofrecuencia</a></li>
-            <li><a class="dropdown-item" href="./electrovacum.html">Electrovacum</a></li>
-            <li><a class="dropdown-item" href="./electroporacion.html">Electroporacion</a></li>
-            <li><a class="dropdown-item" href="./ondasRusas.html">Ondas Rusas</a></li>
-          </ul>
-        </li>
-        <!-------------------------separador-------------------------------------->
-        <li><a class="nav-link active" href="./cursos.html">Cursos</a></li>
-        <li><a class="nav-link active" href="./equipo.html">Alquileres de equipos y servicios</a></li>
-        <li> <a class="nav-link active" href="./productos.html">Productos</a></li>
-        <li> <a class="nav-link active" href="./blog.html">Blog</a></li>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-----------------------------------TERMINA LA BARRA DE INICIO CON LOS LINK----------------------->
-
-<h1>Mazz Makeup</h1>
-<br><hr>
-<!----------------------------items de los maquillajes----------------------------------------------------->
-  <!--------------aca comienza el carrito------------------------------>
-  <div class="container-icon">
-    <div class="container-cart-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="icon-cart">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-        </svg>
-        <div class="count-products">
-            <span id="count-products">0</span>
+    <!------------DA COMIENZO A LA BARRA DE NAVEGACION-------------------------->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="../img/logo_tami-removebg-preview.png" alt="miLogo" width="80" height="80">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-collapse mb-2 mb-lg-0 blanco ">
+                    <li><a class="nav-link active" href="../index.html">Inicio</a></li>
+                    <li><a class="nav-link active" href="./depilacionDefinitiva.html">Depilacion Definitiva</a>
+                        <!-------3 subpaginas de facial---------->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="true">Tratamientos Faciales</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./criofrecuencia.html">Criofrecuencia</a></li>
+                            <li><a class="dropdown-item" href="./peeling.html">Peeling</a></li>
+                            <li><a class="dropdown-item" href="./limpiezaProfunda.html">Limpieza Profunda</a></li>
+                        </ul>
+                    </li>
+                    <!-----------------------------separar----------------------------->
+                    <!------------5 subpaginas para tratamiento corporal------------------------>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="true">
+                            Tratamiento corporal
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./criolipolisisPlana.html">Criolipolisis Plana</a></li>
+                            <li><a class="dropdown-item" href="./lipolaser.html">Lipolaser</a></li>
+                            <li><a class="dropdown-item" href="./criofrecuencia.html">Criofrecuencia</a></li>
+                            <li><a class="dropdown-item" href="./electrovacum.html">Electrovacum</a></li>
+                            <li><a class="dropdown-item" href="./electroporacion.html">Electroporacion</a></li>
+                            <li><a class="dropdown-item" href="./ondasRusas.html">Ondas Rusas</a></li>
+                        </ul>
+                    </li>
+                    <!-------------------------separador-------------------------------------->
+                    <li><a class="nav-link active" href="./cursos.html">Cursos</a></li>
+                    <li><a class="nav-link active" href="./equipo.html">Alquileres de equipos y servicios</a></li>
+                    <li> <a class="nav-link active" href="./productos.html">Productos</a></li>
+                    <li> <a class="nav-link active" href="./blog.html">Blog</a></li>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-
-    <div class="container-cart-products hidden-cart">
-        <div class="row-product hidden">
-            <div class="cart-product">
-                <div class="info-cart-product">
-                    <span class="cantidad-producto-carrito">{}</span>
-                    <p class="titulo-producto-carrito">{}</p>
-                    <p class="description">{}</p>
-
-                    <span class="precio-producto-carrito">$</span>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="icon-close">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-                <div>
-                    <span class="total-pagar">$0.00</span>
-                </div>
-
-                <button class="btn-checkout">checkout</button>
+    </nav>
+    <!-----------------------------------TERMINA LA BARRA DE INICIO CON LOS LINK----------------------->
+    <h1>Mazz Makeup</h1>
+    <br>
+    <hr>
+    <!----------------------------items de los maquillajes----------------------------------------------------->
+    </header>
+    <!--------------COMIENZO DE TODOS LOS PRODUCTOS--------------------->
+    <div class="container-item">
+        <div class="item">
+            <figure>
+                <img src="../img/img product/agua mise.jpg" alt="producto 1">
+            </figure>
+            <div class="info-product">
+                <h2>Agua Miselar</h2>
+                <button class="buttonProductSee" onclick="showDetails(1)">
+                    <span class="hover-underline-animation">Ver mas detalles</span>
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../img/img product/crema ros.jpg" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Crema Plus</h2>
+                <button class="buttonProductSee" onclick="showDetails(2)">
+                    <span class="hover-underline-animation">Ver mas detalles</span>
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../img/img product/crema.png" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Crema de brillo</h2>
+                <button class="buttonProductSee" onclick="showDetails(3)">
+                    <span class="hover-underline-animation">Ver mas detalles</span>
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../img/img product/MALBEC.JPG" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Malec</h2>
+                <button class="buttonProductSee" onclick="showDetails(4)">
+                    <span class="hover-underline-animation">Ver mas detalles</span>
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../img/img product/MAZZ VITC.jpg" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Mazz vitc</h2>
+                <button class="buttonProductSee" onclick="showDetails(5)">
+                    <span class="hover-underline-animation">Ver mas detalles</span>
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../img/img product/omg gloss.jpg" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Gloss</h2>
+                <button class="buttonProductSee" onclick="showDetails(6)">
+                    <span class="hover-underline-animation">Ver mas detalles</span>
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../img/img product/serum.jpg" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Serum</h2>
+                <button class="buttonProductSee" onclick="showDetails(7)">
+                    <span class="hover-underline-animation">Ver mas detalles</span>
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../img/img product/posteo agua micelar 6 en 1.png" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Micelar</h2>
+                <button class="buttonProductSee" onclick="showDetails(8)">
+                    <span class="hover-underline-animation">Ver mas detalles</span>
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../img/crema ros.jpg" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Crema roso</h2>
+                <button class="buttonProductSee" onclick="showDetails(9)">
+                    <span class="hover-underline-animation">Ver mas detalles</span>
+                </button>
+            </div>
+        </div>
+        <!-----------------detalle de todos los productos------------------>
+        <div class="product-details" id="details">
+            <img src="#" alt="img products">
+            <h2 class="h2Details" id="detail-title"></h2>
+            <div class="divDitails">
+                <p class="pDetails" id="detail-description"></p>
+                <hr><br>
+                <p id="priceElement" class="priceElement"></p>
+                <button onclick="hideDetails()" class="buttonCart">Volver</button>
             </div>
         </div>
 
     </div>
-</div>
+    <!-----------------link para ir a los otros productos--------------------------------->
+
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link enlace" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link enlace" href="./maquillaje.html">Mazz Makeup</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link  enlace" href="./crema.html">Rouse Arey</a>
+        </li>
+    </ul>
 
 
-</header>
-<!--------------COMIENZO DE TODOS LOS PRODUCTOS DE LA TIENDA--------------------->
-<div class="container-item">
-    <div class="item" onclick="showDetails(1)">
-        <figure>
-            <img src="../img/img product/agua mise.jpg" alt="producto 1">
-        </figure>
-        <div class="info-product">
-            <h2>Agua Miselar</h2>
-            <p class="price">$80</p>
-            <button class="buttonProductSee" onclick="showDetails(1)">
-                <span class="hover-underline-animation">Ver mas detalles</span>
-            </button>
-            <button id="button-buys" data-product="123" class="buttonCart">
-                Añadir al carrito
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-cart4" viewBox="0 0 16 16">
-                    <path
-                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-                </svg>
-            </button>
-        </div>
-    </div>
-    <div class="item" onclick="showDetails(2)">
-        <figure>
-            <img src="../img/img product/crema ros.jpg" alt="producto">
-        </figure>
-        <div class="info-product">
-            <h2>Crema Ros</h2>
-            <p class="price">$870</p>
-            <button class="buttonProductSee" onclick="showDetails(2)">
-                <span class="hover-underline-animation">Ver mas detalles</span>
-            </button>
-            <button id="button-buys" data-product="123" class="buttonCart">
-                Añadir al carrito
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-cart4" viewBox="0 0 16 16">
-                    <path
-                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-                </svg>
-            </button>
-        </div>
-    </div>
-    <div class="item" onclick="showDetails(3)">
-        <figure>
-            <img src="../img/img product/crema.png" alt="producto">
-        </figure>
-        <div class="info-product">
-            <h2>Crema Mineral</h2>
-            <p class="price">$456</p>
-            <button class="buttonProductSee" onclick="showDetails(3)">
-                <span class="hover-underline-animation">Ver mas detalles</span>
-            </button>
-            <button id="button-buys" data-product="123" class="buttonCart">
-                Añadir al carrito
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-cart4" viewBox="0 0 16 16">
-                    <path
-                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-                </svg>
-            </button>
-        </div>
-    </div>
-    <div class="item" onclick="showDetails(4)">
-        <figure>
-            <img src="../img/img product/MALBEC.JPG" alt="producto">
-        </figure>
-        <div class="info-product">
-            <h2>Malec</h2>
-            <p class="price">$341</p>
-            <button class="buttonProductSee" onclick="showDetails(4)">
-                <span class="hover-underline-animation">Ver mas detalles</span>
-            </button>
-            <button id="button-buys" data-product="123" class="buttonCart">Añadir al carrito</button>
-        </div>
-    </div>
-    <div class="item" onclick="showDetails(5)">
-        <figure>
-            <img src="../img/img product/MAZZ VITC.jpg" alt="producto">
-        </figure>
-        <div class="info-product">
-            <h2>Mazz vitc</h2>
-            <p class="price">$870</p>
-            <button class="buttonProductSee" onclick="showDetails(5)">
-                <span class="hover-underline-animation">Ver mas detalles</span>
-            </button>
-            <button id="button-buys" data-product="123" class="buttonCart">Añadir al carrito</button>
-        </div>
-    </div>
-    <div class="item" onclick="showDetails(6)">
-        <figure>
-            <img src="../img/img product/omg gloss.jpg" alt="producto">
-        </figure>
-        <div class="info-product">
-            <h2>Gloss</h2>
-            <p class="price">$98</p>
-            <button class="buttonProductSee" onclick="showDetails(6)">
-                <span class="hover-underline-animation">Ver mas detalles</span>
-            </button>
-            <button id="button-buys" data-product="123" class="buttonCart">Añadir al carrito</button>
-        </div>
-    </div>
-    <div class="item" onclick="showDetails(7)">
-        <figure>
-            <img src="../img/img product/serum.jpg" alt="producto">
-        </figure>
-        <div class="info-product">
-            <h2>Serum</h2>
-            <p class="price">$320</p>
-            <button class="buttonProductSee" onclick="showDetails(7)">
-                <span class="hover-underline-animation">Ver mas detalles</span>
-            </button>
-            <button id="button-buys" data-product="123" class="buttonCart">Añadir al carrito</button>
-        </div>
-    </div>
-    <div class="item" onclick="showDetails(8)">
-        <figure>
-            <img src="../img/img product/posteo agua micelar 6 en 1.png" alt="producto">
-        </figure>
-        <div class="info-product">
-            <h2>Micelar</h2>
-            <p class="price">$980</p>
-            <button class="buttonProductSee" onclick="showDetails(8)">
-                <span class="hover-underline-animation">Ver mas detalles</span>
-            </button>
-            <button id="button-buys" data-product="123" class="buttonCart">Añadir al carrito</button>
-        </div>
-    </div>
-    <div class="item" onclick="showDetails(9)">
-        <figure>
-            <img src="../img/crema ros.jpg" alt="producto">
-        </figure>
-        <div class="info-product">
-            <h2>Crema roso</h2>
-            <p class="price">$1050</p>
-            <button class="buttonProductSee" onclick="showDetails(9)">
-                <span class="hover-underline-animation">Ver mas detalles</span>
-            </button>
-            <button id="button-buys" data-product="123" class="buttonCart">Añadir al carrito</button>
-        </div>
-    </div>
-    <!-----------------detalle de todos los productos------------------>
-    <div class="product-details" id="details">
-        <img src="#" alt="img products">
-        <h2 class="h2Details" id="detail-title"></h2>
-        <div class="divDitails">
-            <p class="pDetails" id="detail-description"></p>
-            <hr><br>
-            <p id="priceElement" class="priceElement"></p>
-            <button id="button-buys" class="buttonCart">carrito</button>
-            <button onclick="hideDetails()" class="buttonCart">Volver</button>
-        </div>
-         </div>
-
-</div>
-<!-----------------link para ir a los otros productos--------------------------------->
-
-
-<ul class="nav justify-content-center">
-<li class="nav-item">
-    <a class="nav-link enlace" href="../index.html">Inicio</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link enlace" href="./maquillaje.html">Mazz Makeup</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link  enlace" href="./crema.html">Rouse Arey</a>
-</li>
-</ul>
-
-
-<script src="../main.js"></script>
-<script src="../cart.js"></script>
-<script src="../cardDetails.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="../main.js"></script>
+    <script src="../details.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

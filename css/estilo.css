@@ -152,49 +152,14 @@ li {
 }
 
 /*****aca diseño de los botones sociales**********/
-.bi-instagram {
-  color: #7e1b44;
-  margin: 2px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
-  border: #004dff;
-  transition: 0.5s;
-  border-radius: 50px;
-  box-shadow: 2px 2px 3px #999;
+.social-buttons {
+  list-style: none;
+  padding: 0;
 }
 
-.bi-instagram:hover {
-  transform: scale(1.2);
-}
-
-.bi-whatsapp {
-  color: #0e6823;
-  margin: 5px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
-  border: #004dff;
-  transition: 0.5s;
-  border-radius: 50px;
-  box-shadow: 2px 2px 3px #999;
-}
-
-.bi-whatsapp:hover {
-  transform: scale(1.2);
-}
-
-.bi-facebook {
-  color: rgb(29, 29, 185);
-  margin: 5px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
-  border: #004dff;
-  transition: 0.5s;
-  border-radius: 50px;
-  box-shadow: 2px 2px 3px #999;
-}
-
-.bi-facebook:hover {
-  transform: scale(1.2);
+.social-buttons li {
+  display: inline-block;
+  margin-right: 0.5rem;
 }
 
 /************ACA TERMINA LOS BOTONES SOCIALES************************/
@@ -461,8 +426,9 @@ img {
 
 h2 {
   font-family: "Times New Roman", Times, serif;
-  font-weight: 700;
+  font-weight: 600;
   color: rgb(41, 10, 68);
+  text-align: center;
 }
 
 .price {
@@ -475,7 +441,7 @@ h2 {
   background-color: #411762;
   border: none;
   color: white;
-  padding: 0.5rem 0.2rem;
+  padding: 1rem 3rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
