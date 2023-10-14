@@ -30,4 +30,57 @@ p {
   font-family: "Times New Roman", Times, serif;
   color: #1b0627;
   font-size: 1rem;
+}
+
+/************************BOTON DE DETALLE******************************/
+.product-details {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(40, 37, 47, 0.9137254902), hsla(300, 25%, 97%, 0.813), rgba(22, 22, 25, 0.8745098039));
+  text-align: center;
+  overflow-y: auto;
+}
+
+.buttonAtras {
+  position: absolute;
+  left: 0;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #2c1961;
+  font-family: monospace;
+}
+
+.h2Details {
+  padding: 0.8rem 0;
+  margin: 1rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2c204f;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.divDitails {
+  border-radius: 0.4rem;
+  padding: 1rem;
+}
+
+.pDetails {
+  color: rgb(66, 64, 68);
+  font-size: 0.9rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.imgAtras {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 400px;
+  margin: 0 auto;
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(190, 190, 190), 0.3em 0.3em 1em rgba(54, 51, 57, 0.3);
 }/*# sourceMappingURL=subpagina.css.map */

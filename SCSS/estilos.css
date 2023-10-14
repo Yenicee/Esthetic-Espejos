@@ -152,49 +152,14 @@ li {
 }
 
 /*****aca diseño de los botones sociales**********/
-.bi-instagram {
-  color: #7e1b44;
-  margin: 2px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
-  border: #004dff;
-  transition: 0.5s;
-  border-radius: 50px;
-  box-shadow: 2px 2px 3px #999;
+.social-buttons {
+  list-style: none;
+  padding: 0;
 }
 
-.bi-instagram:hover {
-  transform: scale(1.2);
-}
-
-.bi-whatsapp {
-  color: #0e6823;
-  margin: 5px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
-  border: #004dff;
-  transition: 0.5s;
-  border-radius: 50px;
-  box-shadow: 2px 2px 3px #999;
-}
-
-.bi-whatsapp:hover {
-  transform: scale(1.2);
-}
-
-.bi-facebook {
-  color: rgb(29, 29, 185);
-  margin: 5px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
-  border: #004dff;
-  transition: 0.5s;
-  border-radius: 50px;
-  box-shadow: 2px 2px 3px #999;
-}
-
-.bi-facebook:hover {
-  transform: scale(1.2);
+.social-buttons li {
+  display: inline-block;
+  margin-right: 0.5rem;
 }
 
 /************ACA TERMINA LOS BOTONES SOCIALES************************/
@@ -373,6 +338,59 @@ p {
   font-size: 1rem;
 }
 
+/************************BOTON DE DETALLE******************************/
+.product-details {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(40, 37, 47, 0.9137254902), hsla(300, 25%, 97%, 0.813), rgba(22, 22, 25, 0.8745098039));
+  text-align: center;
+  overflow-y: auto;
+}
+
+.buttonAtras {
+  position: absolute;
+  left: 0;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #2c1961;
+  font-family: monospace;
+}
+
+.h2Details {
+  padding: 0.8rem 0;
+  margin: 1rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2c204f;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.divDitails {
+  border-radius: 0.4rem;
+  padding: 1rem;
+}
+
+.pDetails {
+  color: rgb(66, 64, 68);
+  font-size: 0.9rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.imgAtras {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 400px;
+  margin: 0 auto;
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(190, 190, 190), 0.3em 0.3em 1em rgba(54, 51, 57, 0.3);
+}
+
 *::after,
 *::before,
 * {
@@ -384,31 +402,6 @@ p {
 body {
   margin-top: 0 auto;
   color: rgb(57, 52, 52);
-}
-
-/**************************STYLE THE SHOPPING CART*************************************/
-.containerIcon {
-  position: relative;
-  display: flex;
-}
-
-.cart-icon {
-  stroke: rgb(32, 31, 34);
-}
-
-.cart-icon:hover {
-  cursor: pointer;
-}
-
-#cart-count {
-  background-color: black;
-  color: beige;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
 }
 
 header {
@@ -464,45 +457,9 @@ img {
 
 h2 {
   font-family: "Times New Roman", Times, serif;
-  font-weight: 700;
+  font-weight: 600;
   color: rgb(41, 10, 68);
-}
-
-.price {
-  font-size: 18px;
-  font-weight: 900;
-}
-
-.buttonCart {
-  border-radius: 0.5rem;
-  background-color: #411762;
-  border: none;
-  color: white;
-  padding: 0.5rem 0.2rem;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-
-.buttonCart::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
-  transform: skewX(-30deg);
-  transition: all 1s ease-in-out;
-}
-
-.buttonCart:hover::before {
-  left: 100%;
 }
 
 .buttonProductSee {
@@ -561,47 +518,4 @@ h1 {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
-
-/***********DETAILS CARD PRODUCT************************/
-.product-details {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, rgba(40, 37, 47, 0.9137254902), hsla(300, 25%, 97%, 0.813), rgba(22, 22, 25, 0.8745098039));
-  text-align: center;
-  overflow-y: auto;
-}
-
-.product-details img {
-  max-width: 80%;
-  max-height: 60%;
-  margin-top: 3.8rem;
-  border-radius: 0.5rem;
-}
-
-.h2Details {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: #533f8a;
-}
-
-.divDitails {
-  border-radius: 0.4rem;
-  padding: 1rem;
-}
-
-.pDetails {
-  color: rgb(66, 64, 68);
-  font-size: 0.9rem;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.priceElement {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: rgb(35, 20, 51);
 }/*# sourceMappingURL=estilos.css.map */
