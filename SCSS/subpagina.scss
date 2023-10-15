@@ -44,12 +44,13 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, #28252fe9, hsla(300, 25%, 97%, 0.813), #161619df);
+  background: linear-gradient(45deg, #352851e9, hsla(260, 6%, 63%, 0.813), #362165fe);
   text-align: center;
   overflow-y: auto;
 }
 
 .buttonAtras {
+  margin: 0.5rem;
   position: absolute;
   left: 0;
   background: none;
@@ -57,6 +58,8 @@ p {
   font-size: 1rem;
   color: #2c1961;
   font-family: monospace;
+  font-size: 1.2rem;
+
 }
 
 .h2Details {
@@ -64,7 +67,7 @@ p {
   margin: 1rem;
   font-size: 2.5rem;
   font-weight: 800;
-  color: #2c204f;
+  color: #e2e0e8;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -74,23 +77,19 @@ p {
 }
 
 .pDetails {
-  color: rgb(66, 64, 68);
-  font-size: 0.9rem;
+  color: rgb(236, 233, 240);
+  font-size: 1rem;
   font-family: 'Times New Roman', Times, serif;
 }
 
 .imgAtras {
   position: relative;
- border-radius: 0.5rem;
+  border-radius: 0.5rem;
   overflow: hidden;
   max-width: 400px;
   margin: 0 auto;
   transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
-  0 0  0 2px rgb(71, 31, 95),
-  0.3em 0.3em 1em rgba(54, 51, 57, 0.3);
-}
-
-.p{
-  color: #392145d2;
+  box-shadow: inset 0 -3em 3em rgba(102, 52, 160, 0.683),
+    0 0 0 2px rgb(86, 74, 93),
+    0.3em 0.3em 1em rgba(54, 51, 57, 0.3);
 }
