@@ -104,7 +104,7 @@ footer {
   background-color: #40254753;
   padding: 30px 0;
   margin: 15px 0;
-  border-radius: 2% 5% 2% 5%;
+  border-radius: 2% 2% 2% 2%;
 }
 
 .container {
@@ -152,7 +152,6 @@ h4 {
   }
 }
 
-
 ul {
   list-style: none;
   padding: 0;
@@ -165,13 +164,13 @@ li {
 
 /*****aca diseño de los botones sociales**********/
 .social-buttons {
-   list-style: none;
+  list-style: none;
   padding: 0;
- }
+}
 
 .social-buttons li {
   display: inline-block;
-  margin-right:0.5rem; 
+  margin-right: 0.5rem;
 }
 
 /************ACA TERMINA LOS BOTONES SOCIALES************************/
@@ -197,24 +196,38 @@ hr {
 .h55 {
   text-align: center;
   margin: 10px;
-  font-size:2rem;
+  font-size: 2rem;
   color: #2d0439;
   font-family: 'Times New Roman', Times, serif;
 }
 
-/*animacion de tarjetas de la parte de inicio*/
+/*animacion de 3 tarjetas de la parte de inicio*/
+.row {
+  margin: 0.4rem;
+}
+
+.card-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
 .coli {
   box-sizing: border-box;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.5s;
-  display: flex;
   user-select: none;
+  font-weight: bolder;
+  border: 1px solid white;
+  backdrop-filter: blur(6px);
+  transition: all 0.5s;
 }
 
 .coli:hover {
-  border: 1px solid black;
+  border: 1px solid rgb(239, 232, 232);
   transform: scale(1.05);
+}
+
+.coli:active {
+  transform: scale(0.95) rotateZ(1.7deg);
 }
 
 /*ACA GENERO ESTILO A LOS BOTONES DE LLEVARNOS AL LINK*/
@@ -276,19 +289,21 @@ hr {
 }
 
 /*ACA ESTILO DE PAG INICIO SCROLL DE PRODUCT MAS VENDIDOS*/
-.scrollGenerl{
+.scrollGenerl {
+  margin-top: 1.8rem;
   background: linear-gradient(rgba(175, 116, 217, 0.403), rgba(144, 105, 189, 0.754), rgb(106, 67, 120), rgb(27, 3, 30))
 }
 
-.saleH2{
-  padding: 0.8rem;
+.saleH2 {
+  text-align: left;
+  margin: 0.4rem;
   color: #2d0439;
- font-weight: 700;
- font-size: 3.5rem;
+  font-weight: 700;
+  font-size: 3rem;
 }
 
-.cta{
-  padding:0.8rem ;
+.cta {
+  padding: 0.8rem;
 }
 
 .slider-outer-container {
@@ -316,17 +331,20 @@ hr {
   height: auto;
 }
 
-.carruselh5{
+.carruselh5 {
   font-size: 2rem;
 }
+
 @media (max-width: 768px) {
   .carruselh5 {
-    font-size: 1.5rem; /* Tamaño de fuente para dispositivos más pequeños */
+    font-size: 1.5rem;
+    /* Tamaño de fuente para dispositivos más pequeños */
   }
 }
 
 @media (max-width: 480px) {
   .carruselh5 {
-    font-size: 1rem; /* Tamaño de fuente para dispositivos móviles */
+    font-size: 1rem;
+    /* Tamaño de fuente para dispositivos móviles */
   }
 }

@@ -1,5 +1,4 @@
- //SCROLL DE PRODUCTOS DE LA PAG INICIO
-
+//SCROLL DE PRODUCTOS DE LA PAG INICIO
 document.addEventListener("DOMContentLoaded", () => {
   const sliderContainer = document.querySelector(".slider-container");
   let isDragging = false;
@@ -48,4 +47,33 @@ document.addEventListener("DOMContentLoaded", () => {
   sliderContainer.addEventListener("touchmove", updateSlider);
   sliderContainer.addEventListener("touchend", endDrag);
   sliderContainer.addEventListener("touchcancel", endDrag);
+});
+
+// Obtener el carrusel
+let carousel = document.querySelector('#carouselExampleCaptions');
+
+// Obtener las imágenes del carrusel
+let carouselItems = carousel.querySelectorAll('.carousel-item');
+
+// Establecer el índice inicial
+let currentIndex = 0;
+
+// Función para avanzar al siguiente slide
+function nextSlide() {
+  carouselItems[currentIndex].classList.remove('active');
+  currentIndex = (currentIndex + 1) % carouselItems.length;
+  carouselItems[currentIndex].classList.add('active');
+}
+
+// Iniciar el carrusel automáticamente
+let interval = setInterval(nextSlide, 4000); // Cambiar de imagen cada 4 segundos
+
+// Detener el carrusel cuando el mouse está sobre él
+carousel.addEventListener('mouseover', function () {
+  clearInterval(interval);
+});
+
+// Reanudar el carrusel cuando el mouse sale del carrusel
+carousel.addEventListener('mouseout', function () {
+  interval = setInterval(nextSlide, 2000);
 });
