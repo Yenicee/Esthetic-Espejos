@@ -211,22 +211,32 @@ btnUsage.addEventListener("click", function () {
 
 
 //ACA VA LA LOGICA DEL INPUT DE LOS PRODUCT SEARCH
-
 function searchProduct() {
     const searchValue = document.getElementById("searchInput").value.toLowerCase();
     const productItems = document.querySelectorAll(".item");
+    let foundResults = false; // Variable para verificar si se encontraron resultados
 
     productItems.forEach((item) => {
         const productName = item.querySelector("h2").innerText.toLowerCase();
         if (productName.includes(searchValue)) {
             item.style.display = "block";
+            foundResults = true; // Se encontró al menos un resultado
         } else {
             item.style.display = "none";
         }
     });
+
+    const noResultsMessage = document.getElementById("noResultsMessage");
+    if (foundResults) {
+        noResultsMessage.style.display = "none"; // Ocultar mensaje si se encontraron resultados
+    } else {
+        noResultsMessage.style.display = "block"; // Mostrar mensaje si no se encontraron resultados
+    }
 }
 
 document.getElementById("searchInput").addEventListener("input", searchProduct);
+
+
 
 
 
