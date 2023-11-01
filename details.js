@@ -190,8 +190,6 @@ function hideDetails() {
         card.style.display = "block";
     }
 }
-
-//AGREGUE LOGICA DE BUTTON DE DESCRIPCION Y BUTTON DE MODO DE USO
 // Obtén referencias a los botones y los contenidos
 const btnDescription = document.getElementById("btnDescription");
 const btnUsage = document.getElementById("btnUsage");
@@ -207,6 +205,12 @@ btnDescription.addEventListener("click", function () {
 btnUsage.addEventListener("click", function () {
     descriptionContent.style.display = "none";
     usageContent.style.display = "block";
+});
+
+// Mostrar contenido de descripción al cargar la página
+window.addEventListener("load", function () {
+    descriptionContent.style.display = "block";
+    usageContent.style.display = "none";
 });
 
 

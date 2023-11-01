@@ -173,11 +173,23 @@ li {
   margin-right: 0.5rem;
 }
 
+a[href*="instagram.com"] svg.bi-instagram {
+  color: #410437f7;
+}
+
+a[href*="whatsapp.com"] svg.bi-whatsapp {
+  color: #2abb42;
+}
+
+a[href*="facebook.com"] svg.bi-facebook {
+  color: rgb(11, 11, 118);
+}
+
 /************ACA TERMINA LOS BOTONES SOCIALES************************/
 /**********************************************************/
 
 a {
-  color: #1d042c;
+  color: #140718;
   text-decoration: none;
   font-family: 'Times New Roman', Times, serif;
 }
